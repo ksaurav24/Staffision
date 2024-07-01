@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fdfaf9;
+  color: #333;
+  position: relative;
+}
+.shadowBtn {
+  box-shadow: 1px 8px 35px rgba(0, 0, 0, 0.12);
+}
