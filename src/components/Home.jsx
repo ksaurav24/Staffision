@@ -194,15 +194,17 @@ const Home = () => {
             across industries
           </h5>
         </div>
-        <div className="lg:grid lg:px-36 pb-12 flex flex-col lg:grid-cols-4 w-screen h-fit  ">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="lg:grid lg:px-36 pb-12 flex flex-col lg:grid-cols-4 w-screen h-fit  "
+        >
           {coreServices.map((service, index) => {
             return (
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+              <div
                 key={index}
-                viewport={{ once: true }}
                 className="  w-[70vw] lg:w-[18vw] p-2 rounded-lg mx-auto my-5 bg-white shadow-xl "
               >
                 <h3 className="text-xl w-full h-16  poppins-bold text-zinc-950 px-4 py-2">
@@ -218,10 +220,10 @@ const Home = () => {
                     alt={service.icon}
                   />
                 </div>
-              </motion.div>
+              </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
