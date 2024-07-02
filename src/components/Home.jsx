@@ -90,7 +90,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="overflow-x-clip">
+    <div className="">
       <img
         src={bubble}
         className="lg:w-[70vw] w-screen mix-blend-multiply lg:block -z-10 absolute -top-36 lg:-top-96 -right-28 lg:-right-64"
