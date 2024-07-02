@@ -74,7 +74,7 @@ const Home = () => {
       position: "HR Manager at GlobalTech Solutions",
       image: user_1,
       review:
-        "Working with this HR solutions provider has been a game-changer for our business. Their services have streamlined our onboarding process, and their analytics tools have provided us with invaluable insights into our workforce. Highly recommend!",
+        "Working with Staffision HR solutions provider has been a game-changer for our business. Their services have streamlined our onboarding process, and their analytics tools have provided us with invaluable insights into our workforce. Highly recommend!",
       rating: 4,
     },
     {
@@ -82,7 +82,7 @@ const Home = () => {
       position: "Director of Human Resources at InnovateCorp",
       image: user_2,
       review:
-        "This company has made our international recruitment process so much easier. Their expertise in localized hiring practices and their global talent pool have helped us find the perfect candidates for our needs. Exceptional service and support!",
+        "Staffision has made our international recruitment process so much easier. Their expertise in localized hiring practices and their global talent pool have helped us find the perfect candidates for our needs. Exceptional service and support!",
       rating: 5,
     },
     {
@@ -90,7 +90,7 @@ const Home = () => {
       position: "Head of Talent Acquisition at Future Enterprises",
       image: user_3,
       review:
-        "The comprehensive talent management solutions provided by this company have significantly improved our employee engagement and productivity. Their dedicated support team is always ready to assist us. We couldn't be happier with their services!",
+        "The comprehensive talent management solutions provided by Staffision have significantly improved our employee engagement and productivity. Their dedicated support team is always ready to assist us. We couldn't be happier with their services!",
       rating: 4,
     },
   ];
@@ -170,12 +170,12 @@ const Home = () => {
     <div data-scroll className="">
       <img
         src={bubble}
-        className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-36 lg:-top-96 -right-28 lg:-right-64"
+        className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-[42vw] lg:-top-96 -right-[38vw] lg:-right-64"
         alt=""
       />
       <img
         src={bubble}
-        className="lg:w-[16vw] w-[60vw] bubble mix-blend-multiply  lg:block -z-10 absolute top-[60vh] -left-28 rotate-180"
+        className="lg:w-[19vw] w-[60vw] bubble mix-blend-multiply  lg:block -z-10 absolute top-[60vh] lg:-left-[8vw] rotate-180 -left-[20vw]"
         alt=""
       />
       <div>
@@ -185,9 +185,9 @@ const Home = () => {
               Unlock Your Business Potential with Expert <br /> HR Solutions
             </h1>
             <h3 className="poppins-regular heroText text-md lg:text-sm">
-              We are a team of HR professionals who provide HR solutions to help
-              businesses grow. Our services include recruitment, training, and
-              consultancy.
+              Staffision is a team of HR professionals who provide HR solutions
+              to help businesses grow. Our services include recruitment,
+              training, and consultancy.
             </h3>
             <button className="w-fit flex lg:mx-12 justify-center mx-auto h-fit my-14">
               <a
@@ -342,7 +342,7 @@ const Home = () => {
               return (
                 <div
                   key={index}
-                  className="lg:w-1/3 w-[80vw] mx-auto px-4 py-3 shadow-xl bg-white rounded-lg h-fit"
+                  className="lg:w-1/3 w-[80vw] mx-auto px-4 py-3 shadow-xl bg-white rounded-lg "
                 >
                   <div className=" w-20 h-20 my-6 -mt-10 mx-auto rounded-full p-[3px] bg-gradient-to-b from-[#f96d31] to-[#ffd271]">
                     <img src={user.image} alt={user.name} className="" />
@@ -353,7 +353,7 @@ const Home = () => {
                   <p className="text-sm mb-4 poppins-regular text-zinc-900 text-center">
                     {user.position}
                   </p>
-                  <p className="text-md h-[200px]  py-4  poppins-regular text-zinc-700 text-center">
+                  <p className="text-md min-h-[200px]  py-4  poppins-regular text-zinc-700 text-center">
                     {user.review}
                   </p>
                   <div className="w-full py-4  flex justify-center items-center">

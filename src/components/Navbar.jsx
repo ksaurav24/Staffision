@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Divide as Hamburger } from "hamburger-react";
 import { gsap } from "gsap";
-
+import Logo from "../assets/Logo.png";
 import { enablePageScroll, disablePageScroll } from "scroll-lock";
 import { useGSAP } from "@gsap/react";
 const Navbar = () => {
@@ -38,7 +38,9 @@ const Navbar = () => {
         ref={navbar}
         className="container mx-auto flex items-center justify-between h-full"
       >
-        <h1 className="text-zinc-950 poppins-bold text-3xl">Logo</h1>
+        <h1 className="text-zinc-950 poppins-bold text-3xl">
+          <img className="w-36" src={Logo} alt="Logo" />
+        </h1>
         <div className="lg:hidden" onClick={toggleNavbar}>
           <Hamburger
             toggled={navigationOpen}
