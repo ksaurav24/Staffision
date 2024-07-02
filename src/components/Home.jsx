@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import homepage from "../assets/homepage.svg";
-
+import workforce from "../assets/workforce.png";
+import globaltalent from "../assets/globaltalent.png";
 import Rating from "@mui/material/Rating";
 import bubble from "../assets/bubble.png";
 import arrow from "../assets/arrow.gif";
@@ -12,11 +13,17 @@ import Achievement from "../assets/coreServices/Achievement.png";
 import Shield from "../assets/coreServices/Shield.png";
 import Linechart from "../assets/coreServices/Linechart.png";
 import Gift from "../assets/coreServices/Gift.png";
+
+import Flowchart from "../assets/coreServices/Flowchart.png";
+import Loginout from "../assets/coreServices/Loginout.png";
+import Teamwork from "../assets/coreServices/Teamwork.png";
+import Gearcomputer from "../assets/coreServices/Gearcomputer.png";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import user_1 from "../assets/users/user_1.png";
 import user_2 from "../assets/users/user_2.png";
 import user_3 from "../assets/users/user_3.png";
+import checkmarkCircle from "../assets/checkmarkCircle.svg";
 gsap.registerPlugin(useGSAP);
 const Home = () => {
   const heroImage = useRef(null);
@@ -63,27 +70,27 @@ const Home = () => {
   });
   const users = [
     {
-      name: "John Doe",
-      position: "CEO, Company Name",
+      name: "John Davis",
+      position: "HR Manager at GlobalTech Solutions",
       image: user_1,
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Working with this HR solutions provider has been a game-changer for our business. Their services have streamlined our onboarding process, and their analytics tools have provided us with invaluable insights into our workforce. Highly recommend!",
       rating: 4,
     },
     {
-      name: "John Doe",
-      position: "CEO, Company Name",
+      name: "Christine Smith",
+      position: "Director of Human Resources at InnovateCorp",
       image: user_2,
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "This company has made our international recruitment process so much easier. Their expertise in localized hiring practices and their global talent pool have helped us find the perfect candidates for our needs. Exceptional service and support!",
       rating: 5,
     },
     {
-      name: "John Doe",
-      position: "CEO, Company Name",
+      name: "David Johnson",
+      position: "Head of Talent Acquisition at Future Enterprises",
       image: user_3,
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "The comprehensive talent management solutions provided by this company have significantly improved our employee engagement and productivity. Their dedicated support team is always ready to assist us. We couldn't be happier with their services!",
       rating: 4,
     },
   ];
@@ -134,10 +141,33 @@ const Home = () => {
       description: "Managing benefits to attract and retain top talent.",
       icon: Gift, // Only "g" capitalized
     },
+    {
+      title: "HR Technology Solutions",
+      description:
+        "Leveraging technology to streamline HR processes and drive efficiency.",
+      icon: Flowchart, // Only "f" capitalized
+    },
+    {
+      title: "Time & Attendance Management",
+      description: "Automating time tracking to improve workforce efficiency.",
+      icon: Loginout, // Only "l" capitalized
+    },
+    {
+      title: "Team Building & Collaboration",
+      description:
+        "Fostering teamwork and collaboration to drive business success.",
+      icon: Teamwork, // Only "t" capitalized
+    },
+    {
+      title: "IT & HR Integration",
+      description:
+        "Integrating IT systems with HR processes for seamless operations.",
+      icon: Gearcomputer, // Only "g" and "c" capitalized
+    },
   ];
 
   return (
-    <div data-scroll>
+    <div data-scroll className="">
       <img
         src={bubble}
         className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-36 lg:-top-96 -right-28 lg:-right-64"
@@ -222,7 +252,82 @@ const Home = () => {
             })}
           </div>
         </div>
-        <div className="container w-screen pb-16 h-fit testimonials ">
+        <div className="w-screen mt-8 px-[6vw] lg:px-[10vw] h-fit flex flex-col relative ">
+          <div className="w-full flex lg:flex-row flex-col-reverse">
+            <div className="lg:w-1/2 w-full lg:px-6 px-2 py-8">
+              <h2 className="lg:text-4xl text-3xl lg:text-start text-center merriweather-bold text-zinc-900">
+                Strengthen Your Workforce, Strengthen Your Business
+              </h2>
+              <p className="text-md my-6 poppins-medium lg:text-start text-center text-zinc-700">
+                Our advanced HR solutions empower your business to build strong,
+                efficient, and engaged teams. Focus on your core operations
+                while we handle the critical aspects of human resource
+                management.
+              </p>
+              <ul className="flex poppins-medium gap-1 text-zinc-900 flex-col ">
+                {[
+                  "Seamless Onboarding",
+                  "Comprehensive Talent Management",
+                  "Insightful Analytics",
+                  "Employee Engagement",
+                  "Regulatory Compliance",
+                  "Performance Management",
+                ].map((item, index) => {
+                  return (
+                    <li key={index} className="flex items-center gap-2">
+                      <img
+                        src={checkmarkCircle}
+                        className="w-4 h-4"
+                        alt="checkmarkCircle"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="lg:w-1/2 w-full ">
+              <img className="" src={workforce} alt="workforce_illustration" />
+            </div>
+          </div>
+          <div className="mt-16 w-full flex flex-col lg:flex-row">
+            <div className="lg:w-1/2">
+              <img src={globaltalent} alt="globalTalent_illustration" />
+            </div>
+            <div className="lg:w-1/2 w-full lg:pl-12 lg:px-6 px-2 py-8">
+              <h2 className="lg:text-4xl text-3xl lg:text-start text-center merriweather-bold text-zinc-900">
+                Global Talent, Local Expertise
+              </h2>
+              <p className="text-md my-6 poppins-medium lg:text-start text-center text-zinc-700">
+                Our global network of HR professionals ensures that you get the
+                best talent from around the world. We understand the local
+                market and provide you with the expertise you need to succeed.
+              </p>
+              <ul className="flex poppins-medium gap-1 text-zinc-900 flex-col ">
+                {[
+                  "Diverse Talent Pool",
+                  "Local Market Knowledge",
+                  "Global Network",
+                  "Customized Solutions",
+                  "Industry Expertise",
+                  "24/7 Support",
+                ].map((item, index) => {
+                  return (
+                    <li key={index} className="flex items-center gap-2">
+                      <img
+                        src={checkmarkCircle}
+                        className="w-4 h-4"
+                        alt="checkmarkCircle"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="mt-16 w-screen pb-16 h-fit testimonials ">
           <div className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex">
             <h2 className=" lg:text-5xl text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-28  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
               What our clients <br /> say about us
@@ -232,7 +337,7 @@ const Home = () => {
               top-notch HR solutions. Here’s what they have to say about us.
             </h5>
           </div>
-          <div className="flex flex-col lg:flex-row py-12 lg:gap-6 gap-16 w-[80%] mx-auto ">
+          <div className="flex flex-col lg:flex-row py-12  gap-16 justify-between w-[80%] mx-auto ">
             {users.map((user, index) => {
               return (
                 <div
@@ -248,7 +353,7 @@ const Home = () => {
                   <p className="text-sm mb-4 poppins-regular text-zinc-900 text-center">
                     {user.position}
                   </p>
-                  <p className="text-md  py-4  poppins-regular text-zinc-700 text-center">
+                  <p className="text-md h-[200px]  py-4  poppins-regular text-zinc-700 text-center">
                     {user.review}
                   </p>
                   <div className="w-full py-4  flex justify-center items-center">

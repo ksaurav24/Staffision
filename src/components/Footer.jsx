@@ -6,9 +6,8 @@ const Footer = () => {
       <div className="w-[86%] mx-auto h-[80%] py-8 my-auto px-10 flex lg:flex-row flex-col justify-center items-center ">
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
           <h2 className="text-3xl poppins-bold mb-4">Logo</h2>
-          <p className="text-sm poppins-regular">
-            Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
-            tellus, sed condimentum volutpat.
+          <p className="text-sm mr-2 poppins-regular">
+            Grow your business with the help of our services and HR solutions.
           </p>
         </div>
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
@@ -91,8 +90,8 @@ const Footer = () => {
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
           <h2 className="text-lg poppins-medium mb-4">Location and Contact</h2>
           <p className="text-sm w-[80%] poppins-regular">
-            2118 Thornridge Cir. Syracuse, Connecticut 35624 <br /> (704)
-            555-0127
+            2118 Thornridge Cir. Syracuse, Connecticut 35624 <br /> (xxx)
+            xxx-xxxx
           </p>
         </div>
       </div>
