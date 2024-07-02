@@ -232,12 +232,12 @@ const Home = () => {
               top-notch HR solutions. Here’s what they have to say about us.
             </h5>
           </div>
-          <div className="flex flex-col lg:flex-row py-12 lg:gap-6 gap-16 w-[76%] mx-auto ">
+          <div className="flex flex-col lg:flex-row py-12 lg:gap-6 gap-16 w-[80%] mx-auto ">
             {users.map((user, index) => {
               return (
                 <div
                   key={index}
-                  className="lg:w-1/3 w-[80vw]  px-4 py-3 shadow-xl bg-white rounded-md h-fit"
+                  className="lg:w-1/3 w-[80vw] mx-auto px-4 py-3 shadow-xl bg-white rounded-lg h-fit"
                 >
                   <div className=" w-20 h-20 my-6 -mt-10 mx-auto rounded-full p-[3px] bg-gradient-to-b from-[#f96d31] to-[#ffd271]">
                     <img src={user.image} alt={user.name} className="" />
