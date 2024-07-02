@@ -1,18 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Divide as Hamburger } from "hamburger-react";
+import { gsap } from "gsap";
+
+import { enablePageScroll, disablePageScroll } from "scroll-lock";
+import { useGSAP } from "@gsap/react";
 const Navbar = () => {
+  const navbar = useRef(null);
+  useGSAP(() => {
+    gsap.from(navbar.current, {
+      duration: 1,
+      opacity: 0,
+      y: -80,
+      ease: "power3.out",
+      delay: 0.2,
+    });
+  });
+
   const [navigationOpen, setnavigationOpen] = useState(false);
   const closeNavbar = () => {
     setnavigationOpen(false);
+  };
+  const toggleNavbar = () => {
+    if (navigationOpen) {
+      setnavigationOpen(false);
+      enablePageScroll();
+    } else {
+      setnavigationOpen(true);
+      disablePageScroll();
+    }
   };
   const location = window.location.href.split("/")[3] || "home";
   console.log(location);
   return (
     <header className="header px-[14vw] z-0 flex w-screen h-[12vh] ">
-      <div className="container mx-auto flex items-center justify-between h-full">
+      <div
+        ref={navbar}
+        className="container mx-auto flex items-center justify-between h-full"
+      >
         <h1 className="text-zinc-950 poppins-bold text-3xl">Logo</h1>
-        <div className="lg:hidden">
+        <div className="lg:hidden" onClick={toggleNavbar}>
           <Hamburger
             toggled={navigationOpen}
             toggle={setnavigationOpen}

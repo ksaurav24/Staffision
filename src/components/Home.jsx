@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import homepage from "../assets/homepage.svg";
 import bubble from "../assets/bubble.jpeg";
 import arrow from "../assets/arrow.gif";
@@ -14,8 +14,54 @@ import Flowchart from "../assets/coreServices/Flowchart.png";
 import Loginout from "../assets/coreServices/Loginout.png";
 import Teamwork from "../assets/coreServices/Teamwork.png";
 import Gearcomputer from "../assets/coreServices/Gearcomputer.png";
-
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { motion } from "framer-motion";
+gsap.registerPlugin(useGSAP);
 const Home = () => {
+  const heroImage = useRef(null);
+  const highlights = useRef(null);
+  useGSAP(() => {
+    gsap.from(".heroText", {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power3.out",
+      delay: 0.5,
+      stagger: 0.3,
+    });
+    gsap.from(".bubble", {
+      duration: 1,
+      opacity: 0,
+      scale: 0.5,
+      y: -50,
+      delay: 0.5,
+      ease: "power3.out",
+      stagger: 0.2,
+    });
+    gsap.from(highlights.current, {
+      duration: 1,
+      opacity: 0,
+      y: 150,
+      ease: "power3.out",
+      delay: 1,
+    });
+    gsap.from(".shadowBtn", {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power3.out",
+      delay: 1,
+    });
+    gsap.from(heroImage.current, {
+      duration: 1,
+      opacity: 0,
+      x: -50,
+      ease: "power3.out",
+      delay: 0.6,
+    });
+  });
+
   const coreServices = [
     {
       title: "Talent Acquisition",
@@ -67,8 +113,7 @@ const Home = () => {
       title: "Recruitment Process Outsourcing",
       description:
         "Handling your recruitment needs quickly and cost-effectively.",
-      description:
-        "We can find the talent you need while you focus on your core business.",
+
       icon: Flowchart, // Only "f" capitalized
     },
     {
@@ -90,23 +135,23 @@ const Home = () => {
   ];
 
   return (
-    <div className="">
+    <div data-scroll className="data-scroll-section">
       <img
         src={bubble}
-        className="lg:w-[70vw] w-screen mix-blend-multiply lg:block -z-10 absolute -top-36 lg:-top-96 -right-28 lg:-right-64"
+        className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-36 lg:-top-96 -right-28 lg:-right-64"
         alt=""
       />
       <img
         src={bubble}
-        className="lg:w-[16vw] w-[60vw] mix-blend-multiply  lg:block -z-10 absolute top-[60vh] -left-28 rotate-180"
+        className="lg:w-[16vw] w-[60vw] bubble mix-blend-multiply  lg:block -z-10 absolute top-[60vh] -left-28 rotate-180"
         alt=""
       />
       <div className="container w-screen relative  flex ">
         <div className="flex lg:mt-20 mt-4 lg:ml-28 right-0 px-8 flex-col ">
-          <h1 className="text-5xl merriweather-bold my-8 text-zinc-950 leading-tight ">
+          <h1 className="text-5xl heroText merriweather-bold my-8 text-zinc-950 leading-tight ">
             Unlock Your Business Potential with Expert <br /> HR Solutions
           </h1>
-          <h3 className="poppins-regular text-md lg:text-sm">
+          <h3 className="poppins-regular heroText text-md lg:text-sm">
             We are a team of HR professionals who provide HR solutions to help
             businesses grow. Our services include recruitment, training, and
             consultancy.
@@ -128,6 +173,7 @@ const Home = () => {
         </div>
         <div className="w-full lg:flex hidden  items-center">
           <img
+            ref={heroImage}
             className="w-[30vw] drop-shadow-xl mt-24 mx-14 my-auto"
             src={homepage}
             alt="Homepage_Illustration"
@@ -135,7 +181,10 @@ const Home = () => {
         </div>
       </div>
       <div className="container w-screen flex-col relative h-screen flex">
-        <div className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex">
+        <div
+          ref={highlights}
+          className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex"
+        >
           <h2 className=" lg:text-5xl text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-20  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
             The Highlighting Part of Our Solution
           </h2>
@@ -148,8 +197,12 @@ const Home = () => {
         <div className="lg:grid lg:px-36 pb-12 flex flex-col lg:grid-cols-4 w-screen h-fit  ">
           {coreServices.map((service, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 key={index}
+                viewport={{ once: true }}
                 className="  w-[70vw] lg:w-[18vw] p-2 rounded-lg mx-auto my-5 bg-white shadow-xl "
               >
                 <h3 className="text-xl w-full h-16  poppins-bold text-zinc-950 px-4 py-2">
@@ -165,7 +218,7 @@ const Home = () => {
                     alt={service.icon}
                   />
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
