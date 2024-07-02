@@ -70,7 +70,7 @@ const Navbar = () => {
           href="#"
           className="poppins-regular hidden lg:block px-8 py-2 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white ease-in-out rounded-3xl"
         >
-          Sign Up Now
+          Get In Touch
         </button>
       </div>
       <AnimatePresence>
@@ -107,7 +107,7 @@ const Navbar = () => {
               href="#"
               className="poppins-regular px-8 py-2 z-0 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white text-zinc-950 ease-in-out rounded-3xl"
             >
-              Sign Up Now
+              Get In Touch
             </button>
           </motion.div>
         )}
