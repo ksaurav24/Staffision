@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="text-sm poppins-regular text-center text-gray-600 ">
+        <p className="text-sm mb-4 poppins-regular text-center text-gray-600 ">
           Sitescript © Copyright 2024. All Rights Reserved.
         </p>
       </div>

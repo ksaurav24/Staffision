@@ -167,7 +167,7 @@ const Home = () => {
   ];
 
   return (
-    <div data-scroll className="">
+    <div data-scroll className="data-scroll">
       <img
         src={bubble}
         className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-[42vw] lg:-top-96 -right-[38vw] lg:-right-64"
