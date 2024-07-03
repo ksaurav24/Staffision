@@ -21,7 +21,7 @@ const Footer = () => {
             xyzcompany@sitescript.com
           </p>
           <div>
-            <ul class="socialIcons flex gap-4 mt-4 lg:mt-6">
+            <ul className="socialIcons flex gap-4 mt-4 lg:mt-6">
               <li>
                 <a href="#">
                   <svg
@@ -78,11 +78,11 @@ const Footer = () => {
             Quick Links
           </h2>
           <ul className=" w-full">
-            {["Home", "About", "Services", "Contact"].map((link) => {
+            {["Home", "About", "Services", "Contact"].map((link, index) => {
               return (
-                <li>
+                <li key={index}>
                   <a
-                    href="#"
+                    href={`/${link}`}
                     className="lg:text-xs text-md  poppins-regular text-gray-600"
                   >
                     {link}

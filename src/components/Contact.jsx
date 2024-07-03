@@ -97,7 +97,6 @@ const Contact = () => {
               src={contact}
               alt="Contact_illustration"
               className="lg:block mt-12 mx-auto hidden"
-              srcset=""
             />
           </div>
         </motion.div>

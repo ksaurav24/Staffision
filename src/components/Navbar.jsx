@@ -68,11 +68,8 @@ const Navbar = () => {
             })}
           </ul>
         </nav>
-        <button
-          href="#"
-          className="poppins-regular hidden lg:block px-8 py-2 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white ease-in-out rounded-3xl"
-        >
-          Get In Touch
+        <button className="poppins-regular hidden lg:block px-8 py-2 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white ease-in-out rounded-3xl">
+          <a href="/contact">Get In Touch</a>
         </button>
       </div>
       <AnimatePresence>
@@ -105,11 +102,8 @@ const Navbar = () => {
                 })}
               </ul>
             </nav>
-            <button
-              href="#"
-              className="poppins-regular px-8 py-2 z-0 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white text-zinc-950 ease-in-out rounded-3xl"
-            >
-              Get In Touch
+            <button className="poppins-regular px-8 py-2 z-0 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white text-zinc-950 ease-in-out rounded-3xl">
+              <a href="/contact">Get In Touch</a>
             </button>
           </motion.div>
         )}

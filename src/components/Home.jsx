@@ -191,16 +191,11 @@ const Home = () => {
             </h3>
             <button className="w-fit flex lg:mx-12 justify-center mx-auto h-fit my-14">
               <a
-                href="#"
+                href="/services"
                 className="poppins-medium px-8 py-3 shadowBtn hover:shadow-none transition-shadow duration-300 lg:text-md text-lg bg-white ease-in-out rounded-3xl"
               >
                 Get started
-                <img
-                  className="w-5 h-5 inline-block ml-2"
-                  src={arrow}
-                  alt=""
-                  srcSet=""
-                />
+                <img className="w-5 h-5 inline-block ml-2" src={arrow} alt="" />
               </a>
             </button>
           </div>
@@ -384,15 +379,14 @@ const Home = () => {
             <div className="w-full ">
               <button className="w-fit flex mx-auto lg:mx-20 justify-center h-fit lg:my-6 my-10 ">
                 <a
-                  href="#"
+                  href="/services"
                   className="poppins-medium px-8 py-3 shadowBtn hover:shadow-none transition-shadow duration-300 lg:text-md text-lg bg-white ease-in-out rounded-3xl"
                 >
                   Get started
                   <img
                     className="w-5 h-5 inline-block ml-2"
                     src={arrow}
-                    alt=""
-                    srcSet=""
+                    alt="ArrowGIFForButton"
                   />
                 </a>
               </button>
