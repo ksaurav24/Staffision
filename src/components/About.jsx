@@ -48,6 +48,20 @@ function About() {
         "We help you build a scalable HR infrastructure that can adapt to your company's evolving needs. Our solutions are designed to grow with you, ensuring you have the support you need to achieve long-term success.",
     },
   ];
+  const leadership = [
+    {
+      name: "Rajan Singh",
+      position: "Founder and CEO",
+    },
+    {
+      name: "Manshi Tiwari",
+      position: "Co-Founder",
+    },
+    {
+      name: "Manish Kumar Singh",
+      position: "Co-Founder",
+    },
+  ];
   return (
     <div data-scroll>
       <motion.img
@@ -197,6 +211,26 @@ function About() {
                 <p className="text-sm min-h-[180px] px-1  poppins-regular text-gray-600 text-center">
                   {quality.description}
                 </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="w-[72vw] mx-auto ">
+        <h3 className="text-4xl my-6 text-center merriweather-bold">
+          Leadership
+        </h3>
+        <div className="flex w-full flex-col lg:flex-row mb-16 shadow-xl rounded-xl bg-white relative">
+          {leadership.map((leader, index) => {
+            return (
+              <div
+                className={`lg:w-1/3 lg:my-6 py-12 lg:py-4 text-center ${
+                  index != 2 && "lg:border-r-2 lg:border-b-0 border-b-2"
+                }`}
+                key={index}
+              >
+                <h4 className="text-xl poppins-medium">{leader.name}</h4>
+                <h6 className="text-sm poppins-regular">{leader.position}</h6>
               </div>
             );
           })}

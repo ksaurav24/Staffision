@@ -4,39 +4,47 @@ import { motion } from "framer-motion";
 const Services = () => {
   const services = [
     {
-      title: "Recruitment Acquisition",
+      service: "RPO Services",
       description:
-        "Our Recruitment and Talent Acquisition service focuses on identifying, and hiring top-tier talent for your organization. We utilize advanced techniques, extensive industry networks, and a robust candidate database to ensure the best match for your company.",
-      benefits: [
-        "Quality Candidates",
-        "Time Efficiency",
-        "Expertise",
-        "Reduced Turnover",
-      ],
+        "Our Recruitment Process Outsourcing (RPO) service manages your entire recruitment process, from talent sourcing to onboarding. We ensure high-quality hires while reducing your recruitment costs and time-to-fill.",
     },
     {
-      title: "Workforce Management",
+      service: "Permanent Staffing",
       description:
-        "Our Workforce Management service offers comprehensive solutions for managing your workforce efficiently. From scheduling and time tracking to compliance and reporting, we provide tools and support to optimize your workforce operations.",
-      benefits: [
-        "Increased Productivity",
-        "Cost Savings",
-        "Compliance Assurance",
-        "Data-Driven Decisions",
-      ],
+        "Our Permanent Staffing service focuses on finding the right long-term talent for your organization. We handle the entire recruitment process, ensuring a perfect fit for your company culture and job requirements.",
     },
     {
-      title: "Training and Development",
+      service: "Contractual Staffing",
       description:
-        "Our Training and Development service is designed to enhance the skills and capabilities of your employees. We offer customized training programs, leadership development, and ongoing professional development opportunities to foster growth.",
-      benefits: [
-        "Skill Enhancement",
-        "Leadership Growth",
-        "Employee Engagement",
-        "Organizational Growth",
-      ],
+        "Our Contractual Staffing service provides flexible staffing solutions to meet your short-term or project-based needs. We supply skilled professionals on a contract basis to help you manage workload fluctuations.",
+    },
+    {
+      service: "HR Consulting",
+      description:
+        "Our HR Consulting service offers expert advice and strategic guidance to optimize your human resources practices. We assist with policy development, compliance, and organizational design to align HR operations with your business goals.",
+    },
+    {
+      service: "Manpower Planning & Staffing",
+      description:
+        "Our Manpower Planning & Staffing service helps you forecast your workforce needs and create effective staffing strategies to ensure your business is always adequately staffed with the right talent.",
+    },
+    {
+      service: "Bulk Staffing",
+      description:
+        "Our Bulk Staffing service is designed to handle large-scale recruitment drives efficiently. We provide a high volume of qualified candidates to meet the demands of large projects or rapid business expansion.",
+    },
+    {
+      service: "IT/Non-IT Staffing",
+      description:
+        "Our IT/Non-IT Staffing service caters to both technical and non-technical staffing requirements. We provide specialized professionals across various domains to support your diverse staffing needs.",
+    },
+    {
+      service: "BPO Staffing",
+      description:
+        "Our BPO Staffing service specializes in supplying skilled personnel for Business Process Outsourcing operations. We provide candidates with the right expertise to ensure your BPO processes run smoothly and efficiently.",
     },
   ];
+
   return (
     <div data-scroll>
       <motion.img
@@ -93,7 +101,7 @@ const Services = () => {
           </motion.p>
         </div>
         <div className="">
-          <div className="flex lg:flex-row flex-col gap-8 w-[78%] mx-auto my-20 relative  ">
+          <div className="flex lg:grid lg:grid-cols-2 flex-col gap-8 w-[78%] mx-auto my-20 relative  ">
             {services.map((service, index) => {
               return (
                 <motion.div
@@ -105,58 +113,14 @@ const Services = () => {
                     delay: 0.2 + index * 0.1,
                     ease: "easeInOut",
                   }}
-                  className="flex py-6 lg:w-1/3 w-[80vw] px-8 bg-zinc-50 rounded-lg shadow-lg flex-col  "
+                  className="flex py-3  px-8 bg-zinc-50 rounded-lg shadow-lg flex-col  "
                 >
-                  <h1 className="text-2xl lg:h-[60px] my-8 text-center text-zinc-950 poppins-medium">
-                    {service.title}
+                  <h1 className="text-2xl lg:h-[40px] my-4 text-center text-zinc-950 poppins-medium">
+                    {service.service}
                   </h1>
-                  <p className="text-md py-4 lg:h-[280px] mb-8 text-zinc-700 poppins-regular ">
+                  <p className="text-md lg:h-[150px]  text-zinc-700 poppins-regular ">
                     {service.description}
                   </p>
-                  <div className="flex flex-col justify-center items-center gap-4 w-full min-h-[200px] ">
-                    <ul>
-                      {service.benefits.map((benefit, index) => {
-                        return (
-                          <li key={index} className="flex items-center gap-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-4 w-4 text-[#f4877b]"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                            <p className="text-sm text-zinc-700 poppins-regular">
-                              {benefit}
-                            </p>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                    <motion.button
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{
-                        duration: 0.4,
-                        delay: 0.4,
-                        ease: "easeInOut",
-                      }}
-                      className="my-4 mx-auto"
-                    >
-                      <a
-                        className="px-6 hover:shadow-xl hover:shadow-[#ff80804e]  transition duration-300 ease-in-out text-md py-3 text-white  bg-gradient-to-b from-[#FA7993] to-[#FDBA5F] mx-auto capitalize poppins-medium rounded-3xl"
-                        href="/contact"
-                      >
-                        Get in touch
-                      </a>
-                    </motion.button>
-                  </div>
                 </motion.div>
               );
             })}
