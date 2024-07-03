@@ -40,3 +40,43 @@ body::-webkit-scrollbar {
   fill: white;
   transition: all 0.3s ease;
 }
+.contactForm > input {
+  width: 100%;
+  padding: 14px 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "poppins", sans-serif;
+}
+.contactForm > input:focus {
+  outline: none;
+}
+.contactForm > textarea:focus {
+  outline: none;
+}
+.contactForm > input::placeholder {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contactForm > textarea {
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  padding: 14px 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+.contactForm > textarea::placeholder {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contactForm > label {
+  font-weight: 500;
+  font-family: "Merriweather", sans-serif;
+  font-size: 1.2rem;
+}

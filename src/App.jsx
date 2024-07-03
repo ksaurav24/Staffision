@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "./locomotive-scroll.css";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 function App() {
   const container = useRef(null);
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
       <Footer />
