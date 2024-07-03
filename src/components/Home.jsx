@@ -167,7 +167,7 @@ const Home = () => {
   ];
 
   return (
-    <div data-scroll className="data-scroll">
+    <div data-scroll className="">
       <img
         src={bubble}
         className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-[42vw] lg:-top-96 -right-[38vw] lg:-right-64"
@@ -178,8 +178,8 @@ const Home = () => {
         className="lg:w-[19vw] w-[60vw] bubble mix-blend-multiply  lg:block -z-10 absolute top-[60vh] lg:-left-[8vw] rotate-180 -left-[20vw]"
         alt=""
       />
-      <div>
-        <div className="container w-screen relative  flex ">
+      <div data-scroll className="">
+        <div data-scroll className="container w-screen relative flex ">
           <div className="flex lg:mt-20 mt-4 lg:ml-28 right-0 px-8 flex-col ">
             <h1 className="text-5xl heroText merriweather-bold my-8 text-zinc-950 leading-tight ">
               Unlock Your Business Potential with Expert <br /> HR Solutions
@@ -213,7 +213,10 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="container w-screen flex-col relative h-fit flex">
+        <div
+          data-scroll
+          className="container w-screen flex-col relative h-fit flex"
+        >
           <div
             ref={highlights}
             className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex"
@@ -252,7 +255,10 @@ const Home = () => {
             })}
           </div>
         </div>
-        <div className="w-screen mt-8 px-[6vw] lg:px-[10vw] h-fit flex flex-col relative ">
+        <div
+          data-scroll
+          className="w-screen mt-8 px-[6vw] lg:px-[10vw] h-fit flex flex-col relative "
+        >
           <div className="w-full flex lg:flex-row flex-col-reverse">
             <div className="lg:w-1/2 w-full lg:px-6 px-2 py-8">
               <h2 className="lg:text-4xl text-3xl lg:text-start text-center merriweather-bold text-zinc-900">
@@ -327,7 +333,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16 w-screen pb-16 h-fit testimonials ">
+        <div data-scroll className="mt-16 w-screen pb-16 h-fit testimonials ">
           <div className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex">
             <h2 className=" lg:text-5xl text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-28  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
               What our clients <br /> say about us

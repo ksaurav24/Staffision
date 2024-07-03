@@ -2,7 +2,10 @@ import React from "react";
 import Logo from "../assets/Logo.png";
 const Footer = () => {
   return (
-    <div className="w-screen relative h-fit py-4 bg-zinc-200 flex flex-col">
+    <div
+      data-scroll
+      className="w-screen data-scroll-section relative h-fit py-4 bg-zinc-200 flex flex-col"
+    >
       <div className="w-[86%] mx-auto h-[80%] py-8 my-auto px-10 flex lg:flex-row flex-col justify-center items-center ">
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
           <h2 className="text-3xl poppins-bold mb-4">
