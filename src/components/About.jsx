@@ -173,7 +173,7 @@ function About() {
           <button className="my-8 lg:ml-auto hover:shadow-xl  hover:shadow-[#ff80804e]  transition duration-300 ease-in-out">
             <a
               className="px-6  text-md py-3 text-white  bg-gradient-to-b from-[#FA7993] to-[#FDBA5F] capitalize poppins-medium rounded-3xl"
-              href="/contact"
+              href="/services"
             >
               View Services
             </a>
