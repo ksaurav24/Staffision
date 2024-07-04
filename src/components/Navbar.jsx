@@ -83,7 +83,7 @@ const Navbar = () => {
             onClick={closeNavbar}
           >
             <nav>
-              <ul className="flex flex-col gap-12 -mt-32">
+              <ul className="flex flex-col gap-12 items-center -mt-32">
                 {["Home", "About", "services"].map((item, index) => {
                   return (
                     <li key={index}>
