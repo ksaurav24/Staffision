@@ -16,7 +16,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
-          <h3 className="text-xl mb-2 poppins-medium">socials</h3>
+          <h3 className="text-xl mb-2 poppins-medium">Socials</h3>
           <p className="text-sm poppins-regular text-gray-600">
             info@staffision.com
           </p>
