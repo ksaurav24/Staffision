@@ -1,8 +1,36 @@
 import React from "react";
 import bubble from "../assets/bubble.webp";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
 import contact from "../assets/contact.svg";
+import { motion } from "framer-motion";
+import { Navigate } from "react-router-dom";
 const Contact = () => {
+  const { register, reset, handleSubmit } = useForm();
+
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [result, setResult] = useState(null);
+
+  const accessKey = "65e64565-ead4-4b12-bf2c-5e688117949b";
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: accessKey,
+    settings: {
+      from_name: "Contact Form",
+      subject: "Contact Message from Website",
+    },
+    onSuccess: (msg, data) => {
+      setIsSuccess(true);
+      alert("Form Submitted Successfully");
+      Navigate("/thankyou");
+      setResult(msg);
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setResult(msg);
+    },
+  });
   return (
     <div>
       <motion.img
@@ -56,9 +84,13 @@ const Contact = () => {
           className="w-screen  h-fit relative flex flex-col lg:flex-row"
         >
           <div className="lg:w-2/3 w-full  py-12 ">
-            <form className="contactForm  px-16 py-12 lg:w-[66%] mx-auto">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="contactForm  px-16 py-12 lg:w-[66%] mx-auto"
+            >
               <label htmlFor="name">Name</label>
               <input
+                {...register("name", { required: true })}
                 placeholder="Your Name"
                 type="text"
                 name="name"
@@ -66,6 +98,7 @@ const Contact = () => {
               />
               <label htmlFor="email">Email</label>
               <input
+                {...register("email", { required: true })}
                 placeholder="Your Email Address"
                 type="email"
                 name="email"
@@ -73,6 +106,7 @@ const Contact = () => {
               />
               <label htmlFor="company">Organisation Name</label>
               <input
+                {...register("company", { required: true })}
                 placeholder="Your Organisation Name"
                 type="text"
                 name="company"
@@ -80,6 +114,7 @@ const Contact = () => {
               />
               <label htmlFor="message">Message</label>
               <textarea
+                {...register("message", { required: true })}
                 placeholder="Your Messege"
                 name="message"
                 id="message"

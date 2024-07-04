@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Service from "./components/Service";
 import Error from "./components/Error";
+import Thankyou from "./components/Thankyou";
 function App() {
   const container = useRef(null);
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/services/:service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thankyou" element={<Thankyou />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
