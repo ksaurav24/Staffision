@@ -167,7 +167,7 @@ const Home = () => {
   ];
 
   return (
-    <div data-scroll className="">
+    <div data-scroll>
       <img
         src={bubble}
         className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-[42vw] lg:-top-96 -right-[38vw] lg:-right-64"
@@ -216,7 +216,7 @@ const Home = () => {
             ref={highlights}
             className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex"
           >
-            <h2 className=" lg:text-5xl text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-20  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
+            <h2 className=" lg:text-5xl text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-16  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
               The Highlighting Part of Our Solution
             </h2>
             <h5 className="poppins-regular text-md  lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 mb-4 lg:mr-20 lg:mt-0 mt-6">
@@ -225,12 +225,12 @@ const Home = () => {
               across industries
             </h5>
           </div>
-          <div className="lg:grid lg:px-36 pb-12 flex flex-col lg:grid-cols-4 w-screen h-fit ">
+          <div className="lg:grid lg:px-24 pb-12 flex flex-col lg:grid-cols-4 w-screen h-fit ">
             {coreServices.map((service, index) => {
               return (
                 <div
                   key={index}
-                  className="  w-[70vw] lg:w-[18vw] p-2 z-10 rounded-lg mx-auto my-5 bg-white shadow-xl "
+                  className="  w-[70vw] lg:w-[20vw] p-2 z-10 rounded-lg mx-auto my-5 bg-white shadow-xl "
                 >
                   <h3 className="text-xl w-full h-16  merriweather-bold text-zinc-950 px-4 py-2">
                     {service.title}
@@ -345,7 +345,7 @@ const Home = () => {
                   key={index}
                   className="lg:w-1/3 w-[80vw] mx-auto px-4 py-3 shadow-xl bg-white rounded-lg "
                 >
-                  <div className=" w-20 h-20 my-6 -mt-10 mx-auto rounded-full p-[3px] bg-gradient-to-b from-[#f96d31] to-[#ffd271]">
+                  <div className=" w-20 h-20 my-6 -mt-10 mx-auto rounded-full p-[3px] bg-gradient-to-b from-[#236881] to-[#5fcaf0]">
                     <img src={user.image} alt={user.name} className="" />
                   </div>
                   <h3 className="text-2xl merriweather-bold my-2 text-zinc-950 text-center">
@@ -366,12 +366,12 @@ const Home = () => {
           </div>
         </div>
         <div className="py-16">
-          <div className="relative bg-gradient-to-b mb-16 from-[#fa7a92] rounded-b-[80px] rounded-t-xl lg:w-[78%] w-[86%] mx-auto h-fit lg:h-[42vh] to-[#FDBE5B] flex flex-col justify-center items-center">
+          <div className="relative bg-gradient-to-b mb-16 from-[#fa7a92] rounded-b-[80px] rounded-t-xl lg:w-[82%] w-[86%] mx-auto h-fit lg:h-[42vh] to-[#FDBE5B] flex flex-col justify-center items-center">
             <div className="w-full py-8 text-white relative lg:flex-row flex-col flex">
-              <h2 className=" lg:text-4xl text-3xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-20  lg:ml-0 text-center lg:text-left merriweather-bold px-6 ">
+              <h2 className=" lg:text-3xl text-3xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-20  lg:ml-0 text-center lg:text-left merriweather-bold px-6 ">
                 Helping businesses in the world with manpower solutions
               </h2>
-              <h5 className="poppins-regular lg:text-md text-lg lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 lg:mb-4 mb-0 lg:mr-10 lg:mt-0 mt-6">
+              <h5 className="poppins-regular lg:text-md lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 lg:mb-4 mb-0 lg:mr-10 lg:mt-0 mt-6">
                 join us today and grow your business with our experience and
                 expertise in HR solutions and services.
               </h5>

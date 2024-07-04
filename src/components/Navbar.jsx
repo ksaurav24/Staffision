@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
         <nav className="lg:block hidden">
           <ul className="flex space-x-12">
-            {["Home", "About", "services", "Contact"].map((item, index) => {
+            {["Home", "About", "services"].map((item, index) => {
               return (
                 <li key={index}>
                   <a
@@ -84,7 +84,7 @@ const Navbar = () => {
           >
             <nav>
               <ul className="flex flex-col gap-12 -mt-32">
-                {["Home", "About", "services", "Contact"].map((item, index) => {
+                {["Home", "About", "services"].map((item, index) => {
                   return (
                     <li key={index}>
                       <a
