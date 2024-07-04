@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Divide as Hamburger } from "hamburger-react";
 import { gsap } from "gsap";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/Logo.webp";
 import { enablePageScroll, disablePageScroll } from "scroll-lock";
 import { useGSAP } from "@gsap/react";
 const Navbar = () => {

@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import homepage from "../assets/homepage.svg";
-import workforce from "../assets/workforce.png";
-import globaltalent from "../assets/globaltalent.png";
+import workforce from "../assets/workforce.webp";
+import globaltalent from "../assets/globaltalent.webp";
 import Rating from "@mui/material/Rating";
-import bubble from "../assets/bubble.png";
+import bubble from "../assets/bubble.webp";
 import arrow from "../assets/arrow.gif";
 import Searchtalent from "../assets/coreServices/Searchtalent.png";
 import Consultant from "../assets/coreServices/Consultant.png";
@@ -20,9 +20,9 @@ import Teamwork from "../assets/coreServices/Teamwork.png";
 import Gearcomputer from "../assets/coreServices/Gearcomputer.png";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import user_1 from "../assets/users/user_1.png";
-import user_2 from "../assets/users/user_2.png";
-import user_3 from "../assets/users/user_3.png";
+import user_1 from "../assets/users/user_1.webp";
+import user_2 from "../assets/users/user_2.webp";
+import user_3 from "../assets/users/user_3.webp";
 import checkmarkCircle from "../assets/checkmarkCircle.svg";
 gsap.registerPlugin(useGSAP);
 const Home = () => {

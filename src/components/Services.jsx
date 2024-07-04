@@ -1,5 +1,5 @@
 import React from "react";
-import bubble from "../assets/bubble.png";
+import bubble from "../assets/bubble.webp";
 import { motion } from "framer-motion";
 const Services = () => {
   const services = [

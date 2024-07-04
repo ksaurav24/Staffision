@@ -1,5 +1,5 @@
 import React from "react";
-import bubble from "../assets/bubble.png";
+import bubble from "../assets/bubble.webp";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import professional from "../assets/professional.svg";
@@ -8,9 +8,9 @@ import handshake from "../assets/handshake.svg";
 import shield from "../assets/shield.svg";
 import trophy from "../assets/trophy.svg";
 import chart from "../assets/chart.svg";
-import ManshiTiwari from "../assets/leaders/ManshiTiwari.jpg";
-import RajanSingh from "../assets/leaders/RajanSingh.jpg";
-import ManishKumarSingh from "../assets/leaders/ManishKumarSingh.jpg";
+import ManshiTiwari from "../assets/leaders/ManshiTiwari.webp";
+import RajanSingh from "../assets/leaders/RajanSingh.webp";
+import ManishKumarSingh from "../assets/leaders/ManishKumarSingh.webp";
 function About() {
   const about = [
     {
@@ -67,7 +67,7 @@ function About() {
       name: "Manish Kumar Singh",
       position: "Co-Founder",
       image: ManishKumarSingh,
-      link: "",
+      link: "https://www.linkedin.com/in/manish-singh-475b35310/",
     },
   ];
   return (
