@@ -1,50 +1,8 @@
 import React from "react";
 import bubble from "../assets/bubble.webp";
 import { motion } from "framer-motion";
+import { services } from "../data";
 const Services = () => {
-  const services = [
-    {
-      service: "RPO Services",
-      description:
-        "Our Recruitment Process Outsourcing (RPO) service manages your entire recruitment process, from talent sourcing to onboarding. We ensure high-quality hires while reducing your recruitment costs and time-to-fill.",
-    },
-    {
-      service: "Permanent Staffing",
-      description:
-        "Our Permanent Staffing service focuses on finding the right long-term talent for your organization. We handle the entire recruitment process, ensuring a perfect fit for your company culture and job requirements.",
-    },
-    {
-      service: "Contractual Staffing",
-      description:
-        "Our Contractual Staffing service provides flexible staffing solutions to meet your short-term or project-based needs. We supply skilled professionals on a contract basis to help you manage workload fluctuations.",
-    },
-    {
-      service: "HR Consulting",
-      description:
-        "Our HR Consulting service offers expert advice and strategic guidance to optimize your human resources practices. We assist with policy development, compliance, and organizational design to align HR operations with your business goals.",
-    },
-    {
-      service: "Manpower Planning & Staffing",
-      description:
-        "Our Manpower Planning & Staffing service helps you forecast your workforce needs and create effective staffing strategies to ensure your business is always adequately staffed with the right talent.",
-    },
-    {
-      service: "Bulk Staffing",
-      description:
-        "Our Bulk Staffing service is designed to handle large-scale recruitment drives efficiently. We provide a high volume of qualified candidates to meet the demands of large projects or rapid business expansion.",
-    },
-    {
-      service: "IT/Non-IT Staffing",
-      description:
-        "Our IT/Non-IT Staffing service caters to both technical and non-technical staffing requirements. We provide specialized professionals across various domains to support your diverse staffing needs.",
-    },
-    {
-      service: "BPO Staffing",
-      description:
-        "Our BPO Staffing service specializes in supplying skilled personnel for Business Process Outsourcing operations. We provide candidates with the right expertise to ensure your BPO processes run smoothly and efficiently.",
-    },
-  ];
-
   return (
     <div data-scroll>
       <motion.img
@@ -101,10 +59,11 @@ const Services = () => {
           </motion.p>
         </div>
         <div className="">
-          <div className="flex lg:grid lg:grid-cols-2 flex-col gap-8 w-[78%] mx-auto my-20 relative  ">
+          <div className="flex lg:grid lg:grid-cols-2 flex-col gap-12 w-[78%] mx-auto my-20 relative  ">
             {services.map((service, index) => {
               return (
-                <motion.div
+                <motion.a
+                  href={`/services/${service.id}`}
                   key={index}
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -113,15 +72,15 @@ const Services = () => {
                     delay: 0.2 + index * 0.1,
                     ease: "easeInOut",
                   }}
-                  className="flex py-3  px-8 bg-zinc-50 rounded-lg shadow-lg flex-col  "
+                  className="flex py-3 px-8 border-[1px] bg-zinc-50 rounded-lg hover:shadow-lg transition-all duration-300 ease-in-out flex-col  "
                 >
                   <h1 className="text-2xl lg:h-[40px] my-4 text-center text-zinc-950 poppins-medium">
                     {service.service}
                   </h1>
                   <p className="text-md lg:h-[150px]  text-zinc-700 poppins-regular ">
-                    {service.description}
+                    {service.shortDescription}
                   </p>
-                </motion.div>
+                </motion.a>
               );
             })}
           </div>

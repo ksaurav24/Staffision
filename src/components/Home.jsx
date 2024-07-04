@@ -5,24 +5,10 @@ import globaltalent from "../assets/globaltalent.webp";
 import Rating from "@mui/material/Rating";
 import bubble from "../assets/bubble.webp";
 import arrow from "../assets/arrow.gif";
-import Searchtalent from "../assets/coreServices/Searchtalent.png";
-import Consultant from "../assets/coreServices/Consultant.png";
-import Moneycheck from "../assets/coreServices/Moneycheck.png";
-import Graduationcap from "../assets/coreServices/Graduationcap.png";
-import Achievement from "../assets/coreServices/Achievement.png";
-import Shield from "../assets/coreServices/Shield.png";
-import Linechart from "../assets/coreServices/Linechart.png";
-import Gift from "../assets/coreServices/Gift.png";
-
-import Flowchart from "../assets/coreServices/Flowchart.png";
-import Loginout from "../assets/coreServices/Loginout.png";
-import Teamwork from "../assets/coreServices/Teamwork.png";
-import Gearcomputer from "../assets/coreServices/Gearcomputer.png";
+import { users } from "../data";
+import { coreServices } from "../data";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import user_1 from "../assets/users/user_1.webp";
-import user_2 from "../assets/users/user_2.webp";
-import user_3 from "../assets/users/user_3.webp";
 import checkmarkCircle from "../assets/checkmarkCircle.svg";
 gsap.registerPlugin(useGSAP);
 const Home = () => {
@@ -68,103 +54,6 @@ const Home = () => {
       delay: 0.6,
     });
   });
-  const users = [
-    {
-      name: "John Davis",
-      position: "HR Manager at GlobalTech Solutions",
-      image: user_1,
-      review:
-        "Working with Staffision HR solutions provider has been a game-changer for our business. Their services have streamlined our onboarding process, and their analytics tools have provided us with invaluable insights into our workforce. Highly recommend!",
-      rating: 4,
-    },
-    {
-      name: "Christine Smith",
-      position: "Director of Human Resources at InnovateCorp",
-      image: user_2,
-      review:
-        "Staffision has made our international recruitment process so much easier. Their expertise in localized hiring practices and their global talent pool have helped us find the perfect candidates for our needs. Exceptional service and support!",
-      rating: 5,
-    },
-    {
-      name: "David Johnson",
-      position: "Head of Talent Acquisition at Future Enterprises",
-      image: user_3,
-      review:
-        "The comprehensive talent management solutions provided by Staffision have significantly improved our employee engagement and productivity. Their dedicated support team is always ready to assist us. We couldn't be happier with their services!",
-      rating: 4,
-    },
-  ];
-  const coreServices = [
-    {
-      title: "Talent Acquisition",
-      description:
-        "We identify and recruit top talent tailored to your specific business needs.",
-      icon: Searchtalent, // Only "s" capitalized
-    },
-    {
-      title: "HR Consulting",
-      description:
-        "Our experts optimize your HR processes for maximum efficiency.",
-      icon: Consultant, // Only "c" capitalized
-    },
-    {
-      title: "Payroll Management",
-      description:
-        "We ensure timely and accurate payroll management for your workforce.",
-      icon: Moneycheck, // Only "m" and "c" capitalized
-    },
-    {
-      title: "Employee Training & Development",
-      description:
-        "Enhancing employee skills and productivity through targeted training.",
-      icon: Graduationcap, // Only "g" and "c" capitalized
-    },
-    {
-      title: "Performance Management",
-      description:
-        "Streamlining performance reviews to drive better business outcomes.",
-      icon: Achievement, // Only "a" capitalized
-    },
-    {
-      title: "Compliance & Risk Management",
-      description:
-        "Ensuring your business adheres to all relevant regulations.",
-      icon: Shield, // Only "s" capitalized
-    },
-    {
-      title: "Workforce Planning",
-      description: "Strategic planning to meet your future workforce needs.",
-      icon: Linechart, // Only "l" and "c" capitalized
-    },
-    {
-      title: "Employee Benefits Administration",
-      description: "Managing benefits to attract and retain top talent.",
-      icon: Gift, // Only "g" capitalized
-    },
-    {
-      title: "HR Technology Solutions",
-      description:
-        "Leveraging technology to streamline HR processes and drive efficiency.",
-      icon: Flowchart, // Only "f" capitalized
-    },
-    {
-      title: "Time & Attendance Management",
-      description: "Automating time tracking to improve workforce efficiency.",
-      icon: Loginout, // Only "l" capitalized
-    },
-    {
-      title: "Team Building & Collaboration",
-      description:
-        "Fostering teamwork and collaboration to drive business success.",
-      icon: Teamwork, // Only "t" capitalized
-    },
-    {
-      title: "IT & HR Integration",
-      description:
-        "Integrating IT systems with HR processes for seamless operations.",
-      icon: Gearcomputer, // Only "g" and "c" capitalized
-    },
-  ];
 
   return (
     <div data-scroll>
@@ -185,9 +74,8 @@ const Home = () => {
               Unlock Your Business Potential with Expert <br /> HR Solutions
             </h1>
             <h3 className="poppins-regular heroText text-md lg:text-sm">
-              Staffision is a team of HR professionals who provide HR solutions
-              to help businesses grow. Our services include recruitment,
-              training, and consultancy.
+              Staffision is a Company Dedicated to Bridging the Gap Between
+              Businesses and the Next Generation of Skilled Professionals.
             </h3>
             <button className="w-fit flex lg:mx-12 justify-center mx-auto h-fit my-14">
               <a
@@ -220,9 +108,9 @@ const Home = () => {
               The Highlighting Part of Our Solution
             </h2>
             <h5 className="poppins-regular text-md  lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 mb-4 lg:mr-20 lg:mt-0 mt-6">
-              Explore our comprehensive services designed to elevate business
+              Explore our comprehensive highlights designed to boost business
               performance, streamline operations, and drive long-term success
-              across industries
+              across various industries.
             </h5>
           </div>
           <div className="lg:grid lg:px-24 pb-12 flex flex-col lg:grid-cols-4 w-screen h-fit ">

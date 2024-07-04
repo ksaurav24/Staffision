@@ -10,6 +10,8 @@ import "./locomotive-scroll.css";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
+import Service from "./components/Service";
+import Error from "./components/Error";
 function App() {
   const container = useRef(null);
   useEffect(() => {
@@ -36,8 +38,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-
+          <Route path="/services/:service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
       <Footer />

@@ -72,7 +72,7 @@ const Footer = () => {
               return (
                 <li key={index}>
                   <a
-                    href={`/${link}`}
+                    href={`/${link === "Home" ? "" : link.toLowerCase()} `}
                     className="lg:text-xs text-md  poppins-regular text-gray-600"
                   >
                     {link}
