@@ -91,7 +91,7 @@ function About() {
         >
           <div className="lg:w-1/4 w-full h-[80%] flex flex-col justify-center items-center my-auto   lg:border-r-[2px] mx-0">
             <h2 className="text-4xl mb-4 merriweather-bold text-center">
-              <CountUp end={60} delay={0.8} suffix="+" duration={2} />
+              <CountUp end={30} delay={0.8} suffix="+" duration={2} />
             </h2>
             <p className="text-sm text-zinc-700 poppins-regular text-center">
               Clients
@@ -99,7 +99,7 @@ function About() {
           </div>
           <div className="lg:w-1/4 w-full h-[80%] flex flex-col justify-center items-center my-auto  lg:border-r-[2px] mx-0">
             <h2 className="text-4xl mb-4 merriweather-bold text-center">
-              <CountUp end={300} delay={0.8} suffix="+" duration={2} />
+              <CountUp end={150} delay={0.8} suffix="+" duration={2} />
             </h2>
             <p className="text-sm text-zinc-700 poppins-regular text-center">
               Manpower Deployed
@@ -107,7 +107,7 @@ function About() {
           </div>
           <div className="lg:w-1/4 w-full h-[80%] flex flex-col justify-center items-center my-auto  lg:border-r-[2px] mx-0">
             <h2 className="text-4xl mb-4 merriweather-bold text-center">
-              <CountUp end={80} delay={0.8} suffix="+" duration={2} />
+              <CountUp end={40} delay={0.8} suffix="+" duration={2} />
             </h2>
             <p className="text-sm text-zinc-700 poppins-regular text-center">
               Training Programs Conducted
@@ -115,7 +115,7 @@ function About() {
           </div>
           <div className="lg:w-1/4 w-full h-[80%] flex flex-col justify-center items-center my-auto   mx-0">
             <h2 className="text-4xl mb-4 merriweather-bold text-center">
-              <CountUp end={1000} delay={0.8} suffix="+" duration={2} />
+              <CountUp end={500} delay={0.8} suffix="+" duration={2} />
             </h2>
             <p className="text-sm text-zinc-700 poppins-regular text-center">
               Transactions Processed
