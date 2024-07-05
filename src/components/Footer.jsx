@@ -12,8 +12,9 @@ const Footer = () => {
           <h2 className="text-3xl poppins-bold mb-4">
             <img className="w-36" src={Logo} alt="Logo" />
           </h2>
-          <p className="text-sm mr-2 poppins-regular">
-            Grow your business with the help of our services and HR solutions.
+          <p className="text-sm mr-2 pr-14 poppins-regular">
+            Transform Your Business with Our Customized HR Solutions and Expert
+            Services, Designed to Drive Your Success.
           </p>
         </div>
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
@@ -72,23 +73,157 @@ const Footer = () => {
             {["Home", "About", "Services", "Contact"].map((link, index) => {
               return (
                 <li key={index}>
-                  <Link
-                    to={`/${link === "Home" ? "" : link.toLowerCase()} `}
+                  <a
+                    href={`/${link === "Home" ? "" : link.toLowerCase()} `}
                     className="lg:text-xs text-md  poppins-regular text-gray-600"
                   >
                     {link}
-                  </Link>
+                  </a>
                 </li>
               );
             })}
           </ul>
         </div>
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
-          <h2 className="text-lg poppins-medium mb-4">Location and Contact</h2>
+          <h2 className="text-lg poppins-medium mb-1">Location</h2>
           <p className="text-sm poppins-regular">
-            C - 124, SECTOR - 2, Noida, Gautam Buddha Nagar
+            <svg
+              className="w-5 h-5 inline-block mr-1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#ffab91"
+                d="M43.5,25c0-8.6-6.9-15.5-15.5-15.5S12.5,16.4,12.5,25c0,3.8,1.4,7.3,3.7,10.1c0,0,7.4,8.4,9.7,10.6	c1.2,1.1,3,1.1,4.1,0c2.7-2.6,9.7-10.6,9.7-10.6C42.1,32.3,43.5,28.8,43.5,25z"
+              ></path>
+              <circle
+                cx="24"
+                cy="21"
+                r="4.5"
+                fill="none"
+                stroke="#18193f"
+                strokeWidth="3"
+              ></circle>
+              <path
+                fill="none"
+                stroke="#18193f"
+                strokeLinecap="round"
+                strokeWidth="3"
+                d="M35.8,31.1c2.3-2.7,3.7-6.2,3.7-10.1c0-8.6-6.9-15.5-15.5-15.5c-3,0-5.8,0.9-8.2,2.3"
+              ></path>
+              <path
+                fill="none"
+                stroke="#18193f"
+                strokeLinecap="round"
+                strokeWidth="3"
+                d="M10.4,13.6c-1.2,2.2-1.9,4.7-1.9,7.4c0,3.8,1.4,7.3,3.7,10.1c0,0,7.4,8.4,9.7,10.6c1.2,1.1,3,1.1,4.1,0	c1.5-1.4,3.2-3.3,5.4-5.8"
+              ></path>
+            </svg>
+            C - 124, SECTOR - 2, Noida, Gautam    Buddha Nagar
             201301, Uttar Pradesh <br />
+          </p>
+          <h2 className="text-lg poppins-medium mt-4 mb-1">Contact</h2>
+          <p className="text-sm poppins-regular my-1">
+            {" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 48 48"
+              className="w-5 rotate-[297deg] h-5 inline-block mr-1"
+            >
+              <path
+                fill="#ffab91"
+                d="M21.7,45.7c1.9,0.6,3.9-0.3,4.7-2.1l1.8-3.8c0.7-1.5,0.3-3.3-0.9-4.4l-2.9-2.7c-0.3-0.3-0.6-0.7-0.6-1.2	c0-0.4-0.2-1.7,1.8-5.2c1-1.6,1.8-2.8,2.7-3.5c0.3-0.3,1.2-1.1,2.3-0.8l3.9,1.2c1.6,0.5,3.3-0.1,4.3-1.4l2.5-3.4	c1.1-1.6,0.9-3.7-0.5-5L39,11.7c-1.5-1.4-3.6-1.9-5.6-1.4C28.5,11.7,23.9,16,19.8,23c-4.1,7-5.6,13.1-4.3,17.9c0.5,1.9,2,3.5,4,4.1	L21.7,45.7z"
+              ></path>
+              <path
+                fill="none"
+                stroke="#18193f"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                d="M30.7,19c1.7,0.5,3.5-0.1,4.5-1.5l2.6-3.5c1.2-1.6,1-3.8-0.5-5.2l-1.8-1.7c-1.5-1.4-3.8-2-5.8-1.4	c-5.1,1.4-9.9,5.8-14.2,13.1c-2.6,4.4-4.1,8.4-4.7,12"
+              ></path>
+              <path
+                fill="none"
+                stroke="#18193f"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                d="M11,37.4c0.5,2,2.1,3.6,4.1,4.2l2.4,0.7c1.9,0.6,4-0.4,4.9-2.2l1.8-4c0.7-1.6,0.3-3.4-0.9-4.5l-3-2.8	c-0.4-0.3-0.6-0.8-0.6-1.2c0-0.4-0.2-1.8,1.9-5.4c1-1.7,1.9-2.9,2.8-3.6"
+              ></path>
+            </svg>
             +91 8287370567
+          </p>
+          <p className="text-sm poppins-regular">
+            <svg
+              className="w-5 h-5 inline-block mr-1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0,0,256,256"
+            >
+              <g
+                fill="none"
+                fillRule="nonzero"
+                stroke="none"
+                strokeWidth="none"
+                strokeLinecap="none"
+                strokeLinejoin="none"
+                strokeMiterlimit="10"
+                strokeDasharray=""
+                strokeDashoffset="0"
+                fontFamily="none"
+                fontWeight="none"
+                fontSize="none"
+                textAnchor="none"
+                style={{ mixBlendmode: "normal" }}
+              >
+                <g transform="scale(5.33333,5.33333)">
+                  <path
+                    d="M41,42h-27c-2.8,0 -5,-2.2 -5,-5v-19c0,-2.8 2.2,-5 5,-5h27c2.8,0 5,2.2 5,5v19c0,2.8 -2.2,5 -5,5z"
+                    fill="#ffbe82"
+                    stroke="none"
+                    strokeWidth="1"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
+                  ></path>
+                  <path
+                    d="M42.5,23.5v10c0,2.8 -2.2,5 -5,5h-27c-2.8,0 -5,-2.2 -5,-5v-3"
+                    fill="none"
+                    stroke="#18193f"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                  <path
+                    d="M5.5,24.9v-10.4c0,-2.8 2.2,-5 5,-5h27c2.8,0 5,2.2 5,5v2"
+                    fill="none"
+                    stroke="#18193f"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                  <path
+                    d="M11.7,19.8l11.3,6.2c0.6,0.3 1.3,0.3 1.9,0l17.5,-9.5"
+                    fill="none"
+                    stroke="#18193f"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            info@staffision.com
           </p>
         </div>
       </div>

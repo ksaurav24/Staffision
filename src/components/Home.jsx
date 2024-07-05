@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+
 import homepage from "../assets/homepage.svg";
 import workforce from "../assets/workforce.webp";
 import globaltalent from "../assets/globaltalent.webp";
@@ -68,11 +69,12 @@ const Home = () => {
         className="lg:w-[19vw] w-[60vw] bubble mix-blend-multiply  lg:block -z-10 absolute top-[60vh] lg:-left-[8vw] rotate-180 -left-[20vw]"
         alt=""
       />
-      <div data-scroll className="">
+      <div data-scroll className="h-fit">
         <div data-scroll className="container w-screen relative flex ">
           <div className="flex lg:mt-20 mt-4 lg:ml-28 right-0 px-8 flex-col ">
-            <h1 className="text-5xl heroText merriweather-bold my-8 text-zinc-950 leading-tight ">
-              Unlock Your Business Potential with Expert <br /> HR Solutions
+            <h1 className="text-4xl heroText merriweather-bold my-8 text-zinc-950 leading-tight ">
+              Unlock Your Business's Potential with tailored HR Solutions and
+              expert guidance.
             </h1>
             <h3 className="poppins-regular heroText text-md lg:text-sm">
               Staffision is a Company Dedicated to Bridging the Gap Between
@@ -88,7 +90,7 @@ const Home = () => {
               </Link>
             </button>
           </div>
-          <div className="w-full lg:flex hidden  items-center">
+          <div className="w-full lg:flex hidden h-fit items-center">
             <img
               ref={heroImage}
               className="w-[30vw] drop-shadow-xl mt-24 mx-14 my-auto"
@@ -176,7 +178,7 @@ const Home = () => {
                 })}
               </ul>
             </div>
-            <div className="lg:w-1/2 w-full ">
+            <div className="lg:w-1/2 h-fit w-full ">
               <img className="" src={workforce} alt="workforce_illustration" />
             </div>
           </div>
@@ -227,7 +229,7 @@ const Home = () => {
               top-notch HR solutions. Here’s what they have to say about us.
             </h5>
           </div>
-          <div className="flex flex-col lg:flex-row py-12  gap-16 justify-between w-[80%] mx-auto ">
+          <div className="flex flex-col lg:flex-row py-12 h-fit gap-16 justify-between w-[80%] mx-auto ">
             {users.map((user, index) => {
               return (
                 <div

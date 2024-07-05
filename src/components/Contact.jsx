@@ -1,11 +1,10 @@
 import React from "react";
 import bubble from "../assets/bubble.webp";
 import { useState } from "react";
-import { set, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import contact from "../assets/contact.svg";
-import { easeInOut, motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 import { CircularProgress } from "@mui/material";
@@ -14,7 +13,6 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [result, setResult] = useState(null);
-  const Navigate = useNavigate();
   const accessKey = "65e64565-ead4-4b12-bf2c-5e688117949b";
   const { submit: onSubmit } = useWeb3Forms({
     access_key: accessKey,
