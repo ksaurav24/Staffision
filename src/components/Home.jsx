@@ -5,6 +5,7 @@ import globaltalent from "../assets/globaltalent.webp";
 import Rating from "@mui/material/Rating";
 import bubble from "../assets/bubble.webp";
 import arrow from "../assets/arrow.gif";
+import { Link } from "react-router-dom";
 import { users } from "../data";
 import { coreServices } from "../data";
 import { gsap } from "gsap";
@@ -78,13 +79,13 @@ const Home = () => {
               Businesses and the Next Generation of Skilled Professionals.
             </h3>
             <button className="w-fit flex lg:mx-12 justify-center mx-auto h-fit my-14">
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="poppins-medium px-8 py-3 shadowBtn hover:shadow-none transition-shadow duration-300 lg:text-md text-lg bg-white ease-in-out rounded-3xl"
               >
                 Get started
                 <img className="w-5 h-5 inline-block ml-2" src={arrow} alt="" />
-              </a>
+              </Link>
             </button>
           </div>
           <div className="w-full lg:flex hidden  items-center">
@@ -266,8 +267,8 @@ const Home = () => {
             </div>
             <div className="w-full ">
               <button className="w-fit flex mx-auto lg:mx-20 justify-center h-fit lg:my-6 my-10 ">
-                <a
-                  href="/services"
+                <Link
+                  to="/services"
                   className="poppins-medium px-8 py-3 shadowBtn hover:shadow-none transition-shadow duration-300 lg:text-md text-lg bg-white ease-in-out rounded-3xl"
                 >
                   Get started
@@ -276,7 +277,7 @@ const Home = () => {
                     src={arrow}
                     alt="ArrowGIFForButton"
                   />
-                </a>
+                </Link>
               </button>
             </div>
           </div>

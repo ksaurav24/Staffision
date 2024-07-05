@@ -24,6 +24,17 @@ import user_1 from "./assets/users/user_1.webp";
 import user_2 from "./assets/users/user_2.webp";
 import user_3 from "./assets/users/user_3.webp";
 
+import ManshiTiwari from "./assets/leaders/ManshiTiwari.webp";
+import RajanSingh from "./assets/leaders/RajanSingh.webp";
+import ManishKumarSingh from "./assets/leaders/ManishKumarSingh.webp";
+
+
+import professional from "./assets/professional.svg";
+import rocket from "./assets/rocket.svg";
+import handshake from "./assets/handshake.svg";
+import shield from "./assets/shield.svg";
+import trophy from "./assets/trophy.svg";
+import chart from "./assets/chart.svg";
 export const services = [
   {
     id: "rpo-services",
@@ -193,5 +204,65 @@ export const users = [
     review:
       "Staffision's talent management solutions have greatly boosted our employee engagement and productivity. Their support team is always ready to assist, and we couldn't be happier with their services!",
     rating: 4,
+  },
+];
+
+export const leadership = [
+  {
+    name: "Rajan Singh",
+    position: "Founder and CEO",
+    image: RajanSingh,
+    link: "https://www.linkedin.com/in/iamrajansingh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+  },
+  {
+    name: "Manshi Tiwari",
+    position: "Co-Founder",
+    image: ManshiTiwari,
+    link: "https://www.linkedin.com/in/iammanshitiwari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+  },
+  {
+    name: "Manish Kumar Singh",
+    position: "Co-Founder",
+    image: ManishKumarSingh,
+    link: "https://www.linkedin.com/in/manish-singh-475b35310/",
+  },
+];
+
+export const about = [
+  {
+    title: "Empowerment Through Expertise",
+    icon: professional,
+    description:
+      "Our team of HR veterans provides strategic guidance and best-in-class solutions to optimize your talent management. We leverage our deep industry knowledge and proven track record to help you build a high-performing workforce.",
+  },
+  {
+    title: "Innovation at Work",
+    icon: rocket,
+    description:
+      "We leverage technology to streamline processes, automate tasks, and deliver data-driven insights for informed decision-making. Our innovative solutions help you stay ahead of the curve and adapt to the ever-changing HR landscape.",
+  },
+  {
+    title: "Collaboration is Key",
+    icon: handshake,
+    description:
+      "We partner closely with you to understand your unique needs and develop customized HR strategies tailored to your goals. We believe in building strong relationships with our clients to ensure their success.",
+  },
+  {
+    title: "Peace of Mind, Guaranteed",
+    icon: shield,
+    description:
+      "Stay compliant with ever-changing regulations and mitigate risks with our proactive approach to HR management. We keep you informed and protected so you can focus on running your business.",
+  },
+  {
+    title: "Your Success is Our Priority",
+    icon: trophy,
+    description:
+      "From recruitment to retention, we offer exceptional service and ongoing support to ensure your workforce thrives. We are dedicated to your success and take pride in being a trusted partner on your HR journey.",
+  },
+  {
+    title: "Scalability for Growth",
+    icon: chart,
+    description:
+      "We help you build a scalable HR infrastructure that can adapt to your company's evolving needs. Our solutions are designed to grow with you, ensuring you have the support you need to achieve long-term success.",
   },
 ];

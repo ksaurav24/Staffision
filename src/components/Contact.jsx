@@ -1,17 +1,20 @@
 import React from "react";
 import bubble from "../assets/bubble.webp";
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import contact from "../assets/contact.svg";
-import { motion } from "framer-motion";
-import { Navigate } from "react-router-dom";
+import { easeInOut, motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
+import { CircularProgress } from "@mui/material";
 const Contact = () => {
   const { register, reset, handleSubmit } = useForm();
-
+  const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [result, setResult] = useState(null);
-
+  const Navigate = useNavigate();
   const accessKey = "65e64565-ead4-4b12-bf2c-5e688117949b";
   const { submit: onSubmit } = useWeb3Forms({
     access_key: accessKey,
@@ -20,11 +23,15 @@ const Contact = () => {
       subject: "Contact Message from Website",
     },
     onSuccess: (msg, data) => {
-      setIsSuccess(true);
-      alert("Form Submitted Successfully");
-      Navigate("/thankyou");
-      setResult(msg);
+      setIsLoading(false);
       reset();
+      setResult(msg);
+      setIsSuccess(true);
+      setTimeout(() => {
+        setIsSuccess(false);
+        window.location.href = "/thankyou";
+        console.log("Redirecting to Thankyou Page");
+      }, 1000);
     },
     onError: (msg, data) => {
       setIsSuccess(false);
@@ -33,6 +40,73 @@ const Contact = () => {
   });
   return (
     <div>
+      <AnimatePresence>
+        {isLoading && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="w-full flex justify-center items-center absolute z-50 h-full bg-zinc-400 bg-opacity-70 "
+          >
+            <CircularProgress />
+          </motion.div>
+        )}
+        {isSuccess && (
+          <motion.div
+            initial={{ scale: 0.7, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, delay: 0.4, ease: "easeInOut" }}
+            className="w-full flex justify-center items-center absolute z-50 h-full bg-zinc-700 bg-opacity-70 "
+          >
+            <h1 className="text-2xl flex justify-center items-center poppins-regular text-white">
+              {result}
+              <svg
+                className="w-6 h-6 "
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <linearGradient
+                  id="IMoH7gpu5un5Dx2vID39Ra_pIPl8tqh3igN_gr1"
+                  x1="9.858"
+                  x2="38.142"
+                  y1="9.858"
+                  y2="38.142"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#9dffce"></stop>
+                  <stop offset="1" stopColor="#50d18d"></stop>
+                </linearGradient>
+                <path
+                  fill="url(#IMoH7gpu5un5Dx2vID39Ra_pIPl8tqh3igN_gr1)"
+                  d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
+                ></path>
+                <linearGradient
+                  id="IMoH7gpu5un5Dx2vID39Rb_pIPl8tqh3igN_gr2"
+                  x1="13"
+                  x2="36"
+                  y1="24.793"
+                  y2="24.793"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset=".824" stopColor="#135d36"></stop>
+                  <stop offset=".931" stopColor="#125933"></stop>
+                  <stop offset="1" stopColor="#11522f"></stop>
+                </linearGradient>
+                <path
+                  fill="url(#IMoH7gpu5un5Dx2vID39Rb_pIPl8tqh3igN_gr2)"
+                  d="M21.293,32.707l-8-8c-0.391-0.391-0.391-1.024,0-1.414l1.414-1.414	c0.391-0.391,1.024-0.391,1.414,0L22,27.758l10.879-10.879c0.391-0.391,1.024-0.391,1.414,0l1.414,1.414	c0.391,0.391,0.391,1.024,0,1.414l-13,13C22.317,33.098,21.683,33.098,21.293,32.707z"
+                ></path>
+              </svg>
+            </h1>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <motion.img
         initial={{ x: 120, scale: 0.2, opacity: 0.5 }}
         animate={{ x: 0, scale: 1, opacity: 1 }}
@@ -122,6 +196,7 @@ const Contact = () => {
               <button
                 className="px-6  lg:ml-auto hover:shadow-xl w-full hover:shadow-[#ff80804e]  transition duration-300 ease-in-out text-lg py-3 text-white  bg-gradient-to-b from-[#FA7993] to-[#FDBA5F] capitalize poppins-medium rounded-3xl"
                 type="submit"
+                onClick={() => setIsLoading(true)}
               >
                 Submit
               </button>

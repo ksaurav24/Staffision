@@ -1,75 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import bubble from "../assets/bubble.webp";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import professional from "../assets/professional.svg";
-import rocket from "../assets/rocket.svg";
-import handshake from "../assets/handshake.svg";
-import shield from "../assets/shield.svg";
-import trophy from "../assets/trophy.svg";
-import chart from "../assets/chart.svg";
-import ManshiTiwari from "../assets/leaders/ManshiTiwari.webp";
-import RajanSingh from "../assets/leaders/RajanSingh.webp";
-import ManishKumarSingh from "../assets/leaders/ManishKumarSingh.webp";
+import { leadership } from "../data";
+import { about } from "../data";
 function About() {
-  const about = [
-    {
-      title: "Empowerment Through Expertise",
-      icon: professional,
-      description:
-        "Our team of HR veterans provides strategic guidance and best-in-class solutions to optimize your talent management. We leverage our deep industry knowledge and proven track record to help you build a high-performing workforce.",
-    },
-    {
-      title: "Innovation at Work",
-      icon: rocket,
-      description:
-        "We leverage technology to streamline processes, automate tasks, and deliver data-driven insights for informed decision-making. Our innovative solutions help you stay ahead of the curve and adapt to the ever-changing HR landscape.",
-    },
-    {
-      title: "Collaboration is Key",
-      icon: handshake,
-      description:
-        "We partner closely with you to understand your unique needs and develop customized HR strategies tailored to your goals. We believe in building strong relationships with our clients to ensure their success.",
-    },
-    {
-      title: "Peace of Mind, Guaranteed",
-      icon: shield,
-      description:
-        "Stay compliant with ever-changing regulations and mitigate risks with our proactive approach to HR management. We keep you informed and protected so you can focus on running your business.",
-    },
-    {
-      title: "Your Success is Our Priority",
-      icon: trophy,
-      description:
-        "From recruitment to retention, we offer exceptional service and ongoing support to ensure your workforce thrives. We are dedicated to your success and take pride in being a trusted partner on your HR journey.",
-    },
-    {
-      title: "Scalability for Growth",
-      icon: chart,
-      description:
-        "We help you build a scalable HR infrastructure that can adapt to your company's evolving needs. Our solutions are designed to grow with you, ensuring you have the support you need to achieve long-term success.",
-    },
-  ];
-  const leadership = [
-    {
-      name: "Rajan Singh",
-      position: "Founder and CEO",
-      image: RajanSingh,
-      link: "https://www.linkedin.com/in/iamrajansingh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-    },
-    {
-      name: "Manshi Tiwari",
-      position: "Co-Founder",
-      image: ManshiTiwari,
-      link: "https://www.linkedin.com/in/iammanshitiwari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-    },
-    {
-      name: "Manish Kumar Singh",
-      position: "Co-Founder",
-      image: ManishKumarSingh,
-      link: "https://www.linkedin.com/in/manish-singh-475b35310/",
-    },
-  ];
   return (
     <div data-scroll>
       <motion.img
@@ -135,12 +71,12 @@ function About() {
             }}
             className="my-8 hover:shadow-xl hover:shadow-[#ff80804e]  transition duration-300 ease-in-out"
           >
-            <a
+            <Link
               className="px-6  text-md py-3 text-white  bg-gradient-to-b from-[#FA7993] to-[#FDBA5F] capitalize poppins-medium rounded-3xl"
-              href="/contact"
+              to="/contact"
             >
               Get in touch
-            </a>
+            </Link>
           </motion.button>
         </div>
         <motion.div
@@ -247,7 +183,7 @@ function About() {
                 <h4 className="text-xl poppins-medium">{leader.name}</h4>
                 <h6 className="text-sm poppins-regular">{leader.position}</h6>
                 {leader.link && (
-                  <a href={leader.link} className="w-fit mt-2 mx-auto flex">
+                  <Link to={leader.link} className="w-fit mt-2 mx-auto flex">
                     <p className="text-xs poppins-regular">LinkedIn</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +196,7 @@ function About() {
                     >
                       <path d="M 41.470703 4.9863281 A 1.50015 1.50015 0 0 0 41.308594 5 L 27.5 5 A 1.50015 1.50015 0 1 0 27.5 8 L 37.878906 8 L 22.439453 23.439453 A 1.50015 1.50015 0 1 0 24.560547 25.560547 L 40 10.121094 L 40 20.5 A 1.50015 1.50015 0 1 0 43 20.5 L 43 6.6894531 A 1.50015 1.50015 0 0 0 41.470703 4.9863281 z M 12.5 8 C 8.3754991 8 5 11.375499 5 15.5 L 5 35.5 C 5 39.624501 8.3754991 43 12.5 43 L 32.5 43 C 36.624501 43 40 39.624501 40 35.5 L 40 25.5 A 1.50015 1.50015 0 1 0 37 25.5 L 37 35.5 C 37 38.003499 35.003499 40 32.5 40 L 12.5 40 C 9.9965009 40 8 38.003499 8 35.5 L 8 15.5 C 8 12.996501 9.9965009 11 12.5 11 L 22.5 11 A 1.50015 1.50015 0 1 0 22.5 8 L 12.5 8 z"></path>
                     </svg>
-                  </a>
+                  </Link>
                 )}
               </div>
             );

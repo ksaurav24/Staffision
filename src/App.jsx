@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import "./roboto.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import { useEffect, useRef } from "react";
@@ -27,14 +27,14 @@ function App() {
     };
   }, []);
   return (
-    <div
-      ref={container}
-      data-scroll-container
-      data-scroll
-      className="data-scroll-container"
-    >
-      <Navbar />
-      <Router>
+    <BrowserRouter>
+      <div
+        ref={container}
+        data-scroll-container
+        data-scroll
+        className="data-scroll-container"
+      >
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -44,9 +44,9 @@ function App() {
           <Route path="/thankyou" element={<Thankyou />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
