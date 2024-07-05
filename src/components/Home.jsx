@@ -6,7 +6,6 @@ import globaltalent from "../assets/globaltalent.webp";
 import Rating from "@mui/material/Rating";
 import bubble from "../assets/bubble.webp";
 import arrow from "../assets/arrow.gif";
-import { Link } from "react-router-dom";
 import { users } from "../data";
 import { coreServices } from "../data";
 import { gsap } from "gsap";
@@ -58,7 +57,7 @@ const Home = () => {
   });
 
   return (
-    <div data-scroll>
+    <div data-scroll className="has-scroll-smooth">
       <img
         src={bubble}
         className="lg:w-[70vw] bubble w-screen mix-blend-multiply lg:block -z-10 absolute -top-[42vw] lg:-top-96 -right-[38vw] lg:-right-64"
@@ -81,13 +80,13 @@ const Home = () => {
               Businesses and the Next Generation of Skilled Professionals.
             </h3>
             <button className="w-fit flex lg:mx-12 justify-center mx-auto h-fit my-14">
-              <Link
-                to="/services"
+              <a
+                href="/services"
                 className="poppins-medium px-8 py-3 shadowBtn hover:shadow-none transition-shadow duration-300 lg:text-md text-lg bg-white ease-in-out rounded-3xl"
               >
                 Get started
                 <img className="w-5 h-5 inline-block ml-2" src={arrow} alt="" />
-              </Link>
+              </a>
             </button>
           </div>
           <div className="w-full lg:flex hidden h-fit items-center">
@@ -123,10 +122,10 @@ const Home = () => {
                   key={index}
                   className="  w-[70vw] lg:w-[20vw] p-2 z-10 rounded-lg mx-auto my-5 bg-white shadow-xl "
                 >
-                  <h3 className="text-xl w-full h-16  merriweather-bold text-zinc-950 px-4 py-2">
+                  <h3 className="text-lg w-full h-fit leading-6  merriweather-bold text-zinc-950 px-4 py-2">
                     {service.title}
                   </h3>
-                  <p className="text-sm poppins-regular h-20 text-zinc-700 px-4 py-2">
+                  <p className="text-xs poppins-regular h-24 text-zinc-700 px-4 py-2">
                     {service.description}
                   </p>
                   <div className="w-full flex justify-end items-end">
@@ -151,10 +150,11 @@ const Home = () => {
                 Strengthen Your Workforce, Strengthen Your Business
               </h2>
               <p className="text-md my-6 poppins-medium lg:text-start text-center text-zinc-700">
-                Our advanced HR solutions empower your business to build strong,
-                efficient, and engaged teams. Focus on your core operations
-                while we handle the critical aspects of human resource
-                management.
+                Build the dream team you deserve. Our advanced HR solutions
+                empower you to cultivate strong, efficient, and highly engaged
+                teams. Focus on your core business while we handle the critical
+                aspects of human resource management, ensuring a seamless and
+                successful employee experience.
               </p>
               <ul className="flex poppins-medium gap-1 text-zinc-900 flex-col ">
                 {[
@@ -191,9 +191,9 @@ const Home = () => {
                 Global Talent, Local Expertise
               </h2>
               <p className="text-md my-6 poppins-medium lg:text-start text-center text-zinc-700">
-                Our global network of HR professionals ensures that you get the
-                best talent from around the world. We understand the local
-                market and provide you with the expertise you need to succeed.
+                Build your global dream team, one connection at a time. We
+                leverage our growing network of HR experts to help you find top
+                talent, navigate local markets, and win the global hiring game.
               </p>
               <ul className="flex poppins-medium gap-1 text-zinc-900 flex-col ">
                 {[
@@ -225,8 +225,8 @@ const Home = () => {
               What our clients <br /> say about us
             </h2>
             <h5 className="poppins-regular text-md  lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 mb-4 lg:mr-20 lg:mt-0 mt-6">
-              We have helped many businesses grow by providing them with
-              top-notch HR solutions. Here’s what they have to say about us.
+              See how our HR solutions helped businesses like yours thrive. Read
+              success stories and discover the impact we can have on your team.
             </h5>
           </div>
           <div className="flex flex-col lg:flex-row py-12 h-fit gap-16 justify-between w-[80%] mx-auto ">
@@ -263,14 +263,15 @@ const Home = () => {
                 Helping businesses in the world with manpower solutions
               </h2>
               <h5 className="poppins-regular lg:text-md lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 lg:mb-4 mb-0 lg:mr-10 lg:mt-0 mt-6">
-                join us today and grow your business with our experience and
-                expertise in HR solutions and services.
+                Join us today and leverage our HR expertise to build a thriving
+                workforce. We offer innovative solutions and proven strategies
+                to elevate your talent management
               </h5>
             </div>
             <div className="w-full ">
               <button className="w-fit flex mx-auto lg:mx-20 justify-center h-fit lg:my-6 my-10 ">
-                <Link
-                  to="/services"
+                <a
+                  href="/services"
                   className="poppins-medium px-8 py-3 shadowBtn hover:shadow-none transition-shadow duration-300 lg:text-md text-lg bg-white ease-in-out rounded-3xl"
                 >
                   Get started
@@ -279,7 +280,7 @@ const Home = () => {
                     src={arrow}
                     alt="ArrowGIFForButton"
                   />
-                </Link>
+                </a>
               </button>
             </div>
           </div>

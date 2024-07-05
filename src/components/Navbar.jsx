@@ -37,8 +37,8 @@ const Navbar = () => {
             {["Home", "About", "services"].map((item, index) => {
               return (
                 <li key={index}>
-                  <Link
-                    to={`/${item === "Home" ? "" : item.toLowerCase()}`}
+                  <a
+                    href={`/${item === "Home" ? "" : item.toLowerCase()}`}
                     className={`capitalize poppins-regular py-2 px-2 transition-colors ease-out duration-200 hover:text-[#f4877b] text-zinc-700 ${
                       location === item.toLowerCase()
                         ? "text-zinc-900 border-b-2 rounded-b-md  border-[#ffae75] "
@@ -46,14 +46,14 @@ const Navbar = () => {
                     } `}
                   >
                     {item}
-                  </Link>
+                  </a>
                 </li>
               );
             })}
           </ul>
         </nav>
         <button className="poppins-regular hidden lg:block px-8 py-2 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white ease-in-out rounded-3xl">
-          <Link to="/contact">Get In Touch</Link>
+          <a href="/contact">Get In Touch</a>
         </button>
       </div>
       <AnimatePresence>
@@ -71,8 +71,8 @@ const Navbar = () => {
                 {["Home", "About", "services"].map((item, index) => {
                   return (
                     <li key={index}>
-                      <Link
-                        to={`/${item === "Home" ? "" : item.toLowerCase()}`}
+                      <a
+                        href={`/${item === "Home" ? "" : item.toLowerCase()}`}
                         className={`capitalize text-xl poppins-regular py-2 px-2 transition-colors ease-out duration-200 hover:text-[#f4877b] text-zinc-950 ${
                           location === item.toLowerCase()
                             ? " border-b-2 rounded-b-md  border-[#ffae75] "
@@ -80,7 +80,7 @@ const Navbar = () => {
                         } `}
                       >
                         {item}
-                      </Link>
+                      </a>
                     </li>
                   );
                 })}

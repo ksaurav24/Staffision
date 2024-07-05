@@ -28,7 +28,6 @@ import ManshiTiwari from "./assets/leaders/ManshiTiwari.webp";
 import RajanSingh from "./assets/leaders/RajanSingh.webp";
 import ManishKumarSingh from "./assets/leaders/ManishKumarSingh.webp";
 
-
 import professional from "./assets/professional.svg";
 import rocket from "./assets/rocket.svg";
 import handshake from "./assets/handshake.svg";
@@ -111,72 +110,76 @@ export const services = [
 ];
 export const coreServices = [
   {
-    title: "Talent Acquisition",
+    title: "Attract Top Talent: Build Your Dream Team",
     description:
-      "We identify and recruit top talent tailored to your specific business needs.",
-    icon: Searchtalent, // Only "s" capitalized
+      "We identify and recruit the perfect candidates to fuel your success. Let's find the talent that aligns with your specific business needs.",
+    icon: Searchtalent,
   },
   {
-    title: "HR Consulting",
+    title: "Optimize Your HR: Streamline for Efficiency",
     description:
-      "Our experts optimize your HR processes for maximum efficiency.",
-    icon: Consultant, // Only "c" capitalized
+      "Our HR experts become an extension of your team, optimizing processes for maximum efficiency. Gain valuable insights to empower your workforce.",
+    icon: Consultant,
   },
   {
-    title: "Payroll Management",
+    title: "Effortless Payroll: Pay Your People On Time, Every Time",
     description:
-      "We ensure timely and accurate payroll management for your workforce.",
-    icon: Moneycheck, // Only "m" and "c" capitalized
+      "Stop worrying about payroll. We ensure timely and accurate payments for your workforce, so you can focus on what matters most.",
+    icon: Moneycheck,
   },
   {
-    title: "Employee Training & Development",
+    title: "Upskill Your Workforce: Invest in Growth",
     description:
-      "Enhancing employee skills and productivity through targeted training.",
-    icon: Graduationcap, // Only "g" and "c" capitalized
+      "Empower your employees with targeted training and development programs. We help them reach their full potential and unlock increased productivity.",
+    icon: Graduationcap,
   },
   {
-    title: "Performance Management",
+    title: "Performance Management: Drive Results",
     description:
-      "Streamlining performance reviews to drive better business outcomes.",
-    icon: Achievement, // Only "a" capitalized
+      "Streamline performance reviews and gain valuable feedback to drive better business outcomes. Motivate your team and achieve strategic goals.",
+    icon: Achievement,
   },
   {
-    title: "Compliance & Risk Management",
-    description: "Ensuring your business adheres to all relevant regulations.",
-    icon: Shield, // Only "s" capitalized
-  },
-  {
-    title: "Workforce Planning",
-    description: "Strategic planning to meet your future workforce needs.",
-    icon: Linechart, // Only "l" and "c" capitalized
-  },
-  {
-    title: "Employee Benefits Administration",
-    description: "Managing benefits to attract and retain top talent.",
-    icon: Gift, // Only "g" capitalized
-  },
-  {
-    title: "HR Technology Solutions",
+    title: "Stay Compliant: Navigate Regulations with Confidence",
     description:
-      "Leveraging technology to streamline HR processes and drive efficiency.",
-    icon: Flowchart, // Only "f" capitalized
+      "Ensure your business adheres to all relevant regulations. We help you navigate the complexities and mitigate risks, giving you peace of mind.",
+    icon: Shield,
   },
   {
-    title: "Time & Attendance Management",
-    description: "Automating time tracking to improve workforce efficiency.",
-    icon: Loginout, // Only "l" capitalized
-  },
-  {
-    title: "Team Building & Collaboration",
+    title: "Plan for the Future: Build Your Ideal Workforce",
     description:
-      "Fostering teamwork and collaboration to drive business success.",
-    icon: Teamwork, // Only "t" capitalized
+      "Develop a strategic workforce plan to meet your future needs. We help you anticipate challenges and ensure you have the right talent in place for long-term success.",
+    icon: Linechart,
   },
   {
-    title: "IT & HR Integration",
+    title: "Attract & Retain Top Talent: Offer Competitive Benefits",
     description:
-      "Integrating IT systems with HR processes for seamless operations.",
-    icon: Gearcomputer, // Only "g" and "c" capitalized
+      "A comprehensive benefits package is key to attracting and retaining top talent. We help you manage employee benefits effectively to build a thriving workforce.",
+    icon: Gift,
+  },
+  {
+    title: "Tech-Powered HR: Work Smarter, Not Harder",
+    description:
+      "Leverage technology to streamline HR processes and drive efficiency. We help you choose the right HR solutions to empower your team and save valuable time.",
+    icon: Flowchart,
+  },
+  {
+    title: "Automate Time Tracking: Boost Efficiency",
+    description:
+      "Stop wasting time on manual time tracking. We help you automate the process to improve workforce efficiency and gain valuable insights.",
+    icon: Loginout,
+  },
+  {
+    title: "Build a Winning Team: Foster Collaboration",
+    description:
+      "Empower collaboration and teamwork to drive your business success. We help you create a culture of communication and build a strong, unified team.",
+    icon: Teamwork,
+  },
+  {
+    title: "Seamless Operations: Integrate IT & HR",
+    description:
+      "Break down silos and integrate your IT systems with HR processes. We help you achieve seamless operations and empower your teams to work together effectively.",
+    icon: Gearcomputer,
   },
 ];
 
@@ -230,39 +233,39 @@ export const leadership = [
 
 export const about = [
   {
-    title: "Empowerment Through Expertise",
+    title: "Unlock Your People's Potential",
     icon: professional,
     description:
-      "Our team of HR veterans provides strategic guidance and best-in-class solutions to optimize your talent management. We leverage our deep industry knowledge and proven track record to help you build a high-performing workforce.",
+      "Empower your workforce with expert guidance. Our HR veterans craft strategic solutions to optimize talent and build high-performing teams. Leverage our industry knowledge and proven track record for success.",
   },
   {
-    title: "Innovation at Work",
+    title: "Automate, Analyze, Adapt",
     icon: rocket,
     description:
-      "We leverage technology to streamline processes, automate tasks, and deliver data-driven insights for informed decision-making. Our innovative solutions help you stay ahead of the curve and adapt to the ever-changing HR landscape.",
+      "Stay ahead of the curve with innovative HR solutions. We leverage technology to streamline processes, automate tasks, and deliver data-driven insights for smarter decisions.  Adapt and thrive in the changing HR landscape.",
   },
   {
-    title: "Collaboration is Key",
+    title: "Build a Winning Team Together",
     icon: handshake,
     description:
-      "We partner closely with you to understand your unique needs and develop customized HR strategies tailored to your goals. We believe in building strong relationships with our clients to ensure their success.",
+      "Collaboration is key to your success. We partner closely with you, tailoring HR strategies to your unique goals. Building strong relationships fuels our commitment to seeing you win.",
   },
   {
-    title: "Peace of Mind, Guaranteed",
+    title: "Focus on Growth, We'll Handle the Rest",
     icon: shield,
     description:
-      "Stay compliant with ever-changing regulations and mitigate risks with our proactive approach to HR management. We keep you informed and protected so you can focus on running your business.",
+      "Proactive HR management keeps you compliant and minimizes risks. Stay informed and protected so you can focus on running your business. We've got your back, guaranteed.",
   },
   {
-    title: "Your Success is Our Priority",
+    title: "Your Success Story Starts Here",
     icon: trophy,
     description:
-      "From recruitment to retention, we offer exceptional service and ongoing support to ensure your workforce thrives. We are dedicated to your success and take pride in being a trusted partner on your HR journey.",
+      "Exceptional service and ongoing support fuel thriving workforces.  From recruitment to retention, we're dedicated to your success. We're a trusted partner on your HR journey, every step of the way.",
   },
   {
-    title: "Scalability for Growth",
+    title: "Scale Smart, Grow Strong",
     icon: chart,
     description:
-      "We help you build a scalable HR infrastructure that can adapt to your company's evolving needs. Our solutions are designed to grow with you, ensuring you have the support you need to achieve long-term success.",
+      "Build a scalable HR infrastructure for long-term success. Our solutions grow with you, adapting to your evolving needs. We provide the support you need to achieve your ambitious goals.",
   },
 ];

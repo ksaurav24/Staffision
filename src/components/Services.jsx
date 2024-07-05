@@ -53,9 +53,7 @@ const Services = () => {
             }}
             className="text-md my-4 text-zinc-700 poppins-regular text-center lg:px-0 px-14 lg:w-[50%] mt-4"
           >
-            We offer a wide range of services and HR solutions to help
-            businesses grow and succeed. Our team of experts is here to help you
-            find the right talent and the perfect job.
+           Staffision delivers a comprehensive suite of HR solutions designed to address the talent needs of businesses and empower career advancement for job seekers. We are your trusted partner in navigating the ever-evolving landscape of human resources.
           </motion.p>
         </div>
         <div className="">

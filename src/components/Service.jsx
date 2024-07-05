@@ -37,6 +37,23 @@ const Service = () => {
         alt="bubble"
       />
       <div className="w-[82vw] mx-auto my-20">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.4,
+            ease: "easeInOut",
+          }}
+          className="w-fit mx-auto rounded-3xl -mt-8 mb-8 px-3 py-1 bg-opacity-50 bg-zinc-300"
+        >
+          <p className="capitalize poppins-medium text-sm text-zinc-700">
+            <a href="/services" className="hover:underline">
+              services
+            </a>
+            /{service.service}
+          </p>
+        </motion.div>
         <motion.h1
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

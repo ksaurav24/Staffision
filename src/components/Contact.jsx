@@ -145,8 +145,8 @@ const Contact = () => {
             Contact Us
           </h1>
           <p className="text-md my-4 text-zinc-700 poppins-regular text-center lg:px-0 px-14 lg:w-[50%] mt-4">
-            Join us and let our team of experts help you grow your business with
-            the help of our services and HR solutions.
+            Ready to build your dream team? Let's chat! Our HR experts are eager
+            to discuss your needs and tailor solutions for your business growth.
           </p>
         </motion.div>
         <motion.div
