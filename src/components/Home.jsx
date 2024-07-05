@@ -107,7 +107,7 @@ const Home = () => {
             ref={highlights}
             className="w-screen py-0 lg:py-12  relative lg:flex-row flex-col flex"
           >
-            <h2 className=" lg:text-5xl text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-16  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
+            <h2 className="  text-4xl leading-tight  mx-auto w-full lg:w-1/2 lg:px-16  lg:ml-20 text-center lg:text-left merriweather-bold px-6 ">
               The Highlighting Part of Our Solution
             </h2>
             <h5 className="poppins-regular text-md  lg:text-left text-center w-full lg:w-1/2 lg:px-20 px-8 mb-4 lg:mr-20 lg:mt-0 mt-6">
