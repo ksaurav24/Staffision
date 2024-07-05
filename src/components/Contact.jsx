@@ -164,6 +164,7 @@ const Contact = () => {
             >
               <label htmlFor="name">Name</label>
               <input
+                required
                 {...register("name", { required: true })}
                 placeholder="Your Name"
                 type="text"
@@ -172,6 +173,7 @@ const Contact = () => {
               />
               <label htmlFor="email">Email</label>
               <input
+                required
                 {...register("email", { required: true })}
                 placeholder="Your Email Address"
                 type="email"
@@ -183,6 +185,7 @@ const Contact = () => {
                 {...register("company", { required: true })}
                 placeholder="Your Organisation Name"
                 type="text"
+                required
                 name="company"
                 id="company"
               />
@@ -191,6 +194,7 @@ const Contact = () => {
                 {...register("message", { required: true })}
                 placeholder="Your Messege"
                 name="message"
+                required
                 id="message"
               ></textarea>
               <button
