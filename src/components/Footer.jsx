@@ -85,49 +85,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">
-          <h2 className="text-lg poppins-medium mb-1">Location</h2>
-          <p className="text-sm poppins-regular">
-            <svg
-              className="w-5 h-5 inline-block mr-1"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="100"
-              height="100"
-              viewBox="0 0 48 48"
-            >
-              <path
-                fill="#ffab91"
-                d="M43.5,25c0-8.6-6.9-15.5-15.5-15.5S12.5,16.4,12.5,25c0,3.8,1.4,7.3,3.7,10.1c0,0,7.4,8.4,9.7,10.6	c1.2,1.1,3,1.1,4.1,0c2.7-2.6,9.7-10.6,9.7-10.6C42.1,32.3,43.5,28.8,43.5,25z"
-              ></path>
-              <circle
-                cx="24"
-                cy="21"
-                r="4.5"
-                fill="none"
-                stroke="#18193f"
-                strokeWidth="3"
-              ></circle>
-              <path
-                fill="none"
-                stroke="#18193f"
-                strokeLinecap="round"
-                strokeWidth="3"
-                d="M35.8,31.1c2.3-2.7,3.7-6.2,3.7-10.1c0-8.6-6.9-15.5-15.5-15.5c-3,0-5.8,0.9-8.2,2.3"
-              ></path>
-              <path
-                fill="none"
-                stroke="#18193f"
-                strokeLinecap="round"
-                strokeWidth="3"
-                d="M10.4,13.6c-1.2,2.2-1.9,4.7-1.9,7.4c0,3.8,1.4,7.3,3.7,10.1c0,0,7.4,8.4,9.7,10.6c1.2,1.1,3,1.1,4.1,0	c1.5-1.4,3.2-3.3,5.4-5.8"
-              ></path>
-            </svg>
-            C - 124, SECTOR - 2, Noida, Gautam    Buddha Nagar
-            201301, Uttar Pradesh <br />
-          </p>
-          <h2 className="text-lg poppins-medium mt-4 mb-1">Contact</h2>
-          <p className="text-sm poppins-regular my-1">
+          <h2 className="text-lg poppins-medium mb-1">Connect With Us</h2>
+          <p className="text-sm poppins-regular my-2">
             {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +120,7 @@ const Footer = () => {
             </svg>
             +91 8287370567
           </p>
-          <p className="text-sm poppins-regular">
+          <p className="text-sm mb-4 poppins-regular">
             <svg
               className="w-5 h-5 inline-block mr-1"
               xmlns="http://www.w3.org/2000/svg"
@@ -224,6 +183,10 @@ const Footer = () => {
               </g>
             </svg>
             info@staffision.com
+          </p>
+          <p className="text-sm poppins-regular">
+            <span className="poppins-bold mr-[4px]">Corporate office: </span> C
+            - 124, SECTOR - 2, Noida, Gautam Buddha Nagar 201301, Uttar Pradesh
           </p>
         </div>
       </div>
