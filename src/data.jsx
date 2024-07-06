@@ -110,75 +110,75 @@ export const services = [
 ];
 export const coreServices = [
   {
-    title: "Attract Top Talent: Build Your Dream Team",
+    title: "Recruit Elite Personnel: Assemble Your Ideal Group",
     description:
-      "We identify and recruit the perfect candidates to fuel your success. Let's find the talent that aligns with your specific business needs.",
+      "To support your success, we find and hire the best candidates. Let's locate the talent that best suits your unique business requirements.",
     icon: Searchtalent,
   },
   {
-    title: "Optimize Your HR: Streamline for Efficiency",
+    title: "Boost Your HR Department: Simplify for Effectiveness",
     description:
-      "Our HR experts become an extension of your team, optimizing processes for maximum efficiency. Gain valuable insights to empower your workforce.",
+      "Our HR specialists work as an extension of your team, streamlining procedures to increase productivity. Acquire insightful knowledge to boost your staff.",
     icon: Consultant,
   },
   {
-    title: "Effortless Payroll: Pay Your People On Time, Every Time",
+    title: "Effortless Payroll: Always Pay Your Employees on Time",
     description:
-      "Stop worrying about payroll. We ensure timely and accurate payments for your workforce, so you can focus on what matters most.",
+      "Put an end to your payroll concerns. We make sure your employees get paid on time and accurately so you can concentrate on what really matters.",
     icon: Moneycheck,
   },
   {
-    title: "Upskill Your Workforce: Invest in Growth",
+    title: "Invest in Growth to Upskill Your Staff",
     description:
-      "Empower your employees with targeted training and development programs. We help them reach their full potential and unlock increased productivity.",
+      "With well-targeted training and development initiatives, empower your staff. We assist them in realizing their greatest potential and achieving greater productivity.",
     icon: Graduationcap,
   },
   {
-    title: "Performance Management: Drive Results",
+    title: "Performance Management: Create Impact",
     description:
-      "Streamline performance reviews and gain valuable feedback to drive better business outcomes. Motivate your team and achieve strategic goals.",
+      "Simplify performance evaluations and gather insightful input to improve corporate results. Encourage your group and accomplish strategic objectives.",
     icon: Achievement,
   },
   {
-    title: "Stay Compliant: Navigate Regulations with Confidence",
+    title: "Continue to Comply: Handle Regulations with Assurance",
     description:
-      "Ensure your business adheres to all relevant regulations. We help you navigate the complexities and mitigate risks, giving you peace of mind.",
+      "Make sure your company complies with all applicable laws. We provide you piece of mind by assisting you in navigating the intricacies and reducing dangers.",
     icon: Shield,
   },
   {
-    title: "Plan for the Future: Build Your Ideal Workforce",
+    title: "Make Future Plans: Create the Workforce of Your Dreams",
     description:
-      "Develop a strategic workforce plan to meet your future needs. We help you anticipate challenges and ensure you have the right talent in place for long-term success.",
+      "Make a comprehensive workforce plan to fulfill your requirements going forward. We support you in identifying potential obstacles and making sure you have the best personnel on board for sustained success.",
     icon: Linechart,
   },
   {
-    title: "Attract & Retain Top Talent: Offer Competitive Benefits",
+    title: "Top Talent Attraction & Retention: Competitive Benefits",
     description:
-      "A comprehensive benefits package is key to attracting and retaining top talent. We help you manage employee benefits effectively to build a thriving workforce.",
+      "Top talent must be drawn to and kept by an extensive benefits package. We support you in efficiently managing employee benefits so you may develop a productive staff.",
     icon: Gift,
   },
   {
-    title: "Tech-Powered HR: Work Smarter, Not Harder",
+    title: "HR Driven by Technology: Effort Less, Not More",
     description:
-      "Leverage technology to streamline HR processes and drive efficiency. We help you choose the right HR solutions to empower your team and save valuable time.",
+      "Utilize technology to increase productivity and streamline HR procedures. We assist you in selecting the best HR solutions to empower your staff and save time.",
     icon: Flowchart,
   },
   {
-    title: "Automate Time Tracking: Boost Efficiency",
+    title: "Automate Time Monitoring to Increase Productivity",
     description:
-      "Stop wasting time on manual time tracking. We help you automate the process to improve workforce efficiency and gain valuable insights.",
+      "Give up on tedious manual time tracking. We assist you in automating the procedure to increase worker productivity and obtain insightful data.",
     icon: Loginout,
   },
   {
     title: "Build a Winning Team: Foster Collaboration",
     description:
-      "Empower collaboration and teamwork to drive your business success. We help you create a culture of communication and build a strong, unified team.",
+      "Encourage teamwork and collaboration to propel your company's success. We support you in developing a strong, cohesive team and a culture of communication.",
     icon: Teamwork,
   },
   {
     title: "Seamless Operations: Integrate IT & HR",
     description:
-      "Break down silos and integrate your IT systems with HR processes. We help you achieve seamless operations and empower your teams to work together effectively.",
+      "Integrate your IT systems with HR procedures to break down silos. We assist you in achieving flawless operations and equipping your staff to collaborate productively.",
     icon: Gearcomputer,
   },
 ];

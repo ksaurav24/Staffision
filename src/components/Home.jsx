@@ -124,7 +124,7 @@ const Home = () => {
                   <h3 className="text-lg w-full h-fit leading-6  merriweather-bold text-zinc-950 px-4 py-2">
                     {service.title}
                   </h3>
-                  <p className="text-xs poppins-regular h-24 text-zinc-700 px-4 py-2">
+                  <p className="text-xs poppins-regular h-28 text-zinc-700 px-4 py-2">
                     {service.description}
                   </p>
                   <div className="w-full flex justify-end items-end">
