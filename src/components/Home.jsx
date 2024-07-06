@@ -70,12 +70,11 @@ const Home = () => {
       />
       <div data-scroll className="h-fit">
         <div data-scroll className="container w-screen relative flex ">
-          <div className="flex lg:mt-20 mt-4 lg:ml-28 right-0 px-8 flex-col ">
-            <h1 className="text-4xl heroText merriweather-bold my-8 text-zinc-950 leading-tight ">
-              Unlock Your Business's Potential with tailored HR Solutions and
-              expert guidance.
+          <div className="flex lg:mt-20   mt-4 lg:ml-20 right-0 px-8 flex-col ">
+            <h1 className="lg:text-5xl  text-4xl text-center lg:text-start heroText merriweather-bold my-4 text-zinc-950 leading-tight ">
+              Strengthen Your Workforce, Strengthen Your Business
             </h1>
-            <h3 className="poppins-regular heroText text-md lg:text-sm">
+            <h3 className="poppins-regular text-center lg:text-start heroText text-md lg:text-sm">
               Staffision is a Company Dedicated to Bridging the Gap Between
               Businesses and the Next Generation of Skilled Professionals.
             </h3>
@@ -89,10 +88,10 @@ const Home = () => {
               </a>
             </button>
           </div>
-          <div className="w-full lg:flex hidden h-fit items-center">
+          <div className="w-full lg:flex hidden ml-48 h-fit items-center">
             <img
               ref={heroImage}
-              className="w-[30vw] drop-shadow-xl mt-24 mx-14 my-auto"
+              className="w-[30vw] drop-shadow-xl mt-24  my-auto"
               src={homepage}
               alt="Homepage_Illustration"
             />
@@ -147,7 +146,7 @@ const Home = () => {
           <div className="w-full flex lg:flex-row flex-col-reverse">
             <div className="lg:w-1/2 w-full lg:px-6 px-2 py-8">
               <h2 className="lg:text-4xl text-3xl lg:text-start text-center merriweather-bold text-zinc-900">
-                Strengthen Your Workforce, Strengthen Your Business
+                Empower Your Growth with Advanced HR Solutions
               </h2>
               <p className="text-md my-6 poppins-medium lg:text-start text-center text-zinc-700">
                 Build the dream team you deserve. Our advanced HR solutions
