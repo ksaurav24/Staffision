@@ -146,14 +146,13 @@ const Home = () => {
           <div className="w-full flex lg:flex-row flex-col-reverse">
             <div className="lg:w-1/2 w-full lg:px-6 px-2 py-8">
               <h2 className="lg:text-4xl text-3xl lg:text-start text-center merriweather-bold text-zinc-900">
-                Empower Your Growth with Advanced HR Solutions
+                Create the dream team you deserve
               </h2>
               <p className="text-md my-6 poppins-medium lg:text-start text-center text-zinc-700">
-                Build the dream team you deserve. Our advanced HR solutions
-                empower you to cultivate strong, efficient, and highly engaged
-                teams. Focus on your core business while we handle the critical
-                aspects of human resource management, ensuring a seamless and
-                successful employee experience.
+                Our innovative HR solutions enable you to build strong,
+                efficient, and engaged teams. Focus on your main company while
+                we handle the key components of human resource management,
+                resulting in a smooth and effective employee experience.
               </p>
               <ul className="flex poppins-medium gap-1 text-zinc-900 flex-col ">
                 {[
