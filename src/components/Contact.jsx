@@ -13,7 +13,7 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [result, setResult] = useState(null);
-  const accessKey = "3bdd4d5f-ba31-41df-941f-1b95ebb26730";
+  const accessKey = "0a887c21-db47-42c3-9e01-6eeea9da0cc4";
   const { submit: onSubmit } = useWeb3Forms({
     access_key: accessKey,
     settings: {
@@ -177,6 +177,15 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
+              />
+              <label htmlFor="contact">Contact</label>
+              <input
+                required
+                {...register("contact", { required: true })}
+                placeholder="Your Contact Number"
+                type="number"
+                name="contact"
+                id="contact"
               />
               <label htmlFor="company">Organisation Name</label>
               <input

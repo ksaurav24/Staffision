@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <nav className="lg:block hidden">
           <ul className="flex space-x-12">
-            {["Home", "About", "services"].map((item, index) => {
+            {["Home", "About", "services", "Blogs"].map((item, index) => {
               return (
                 <li key={index}>
                   <a
@@ -68,7 +68,7 @@ const Navbar = () => {
           >
             <nav>
               <ul className="flex flex-col gap-12 items-center -mt-32">
-                {["Home", "About", "services"].map((item, index) => {
+                {["Home", "About", "services", "Blogs"].map((item, index) => {
                   return (
                     <li key={index}>
                       <a
@@ -87,7 +87,7 @@ const Navbar = () => {
               </ul>
             </nav>
             <button className="poppins-regular px-8 py-2 z-0 shadowBtn hover:shadow-none transition-shadow duration-300 bg-white text-zinc-950 ease-in-out rounded-3xl">
-              <Link to="/contact">Get In Touch</Link>
+              <a href="/contact">Get In Touch</a>
             </button>
           </motion.div>
         )}

@@ -77,3 +77,7 @@ body {
   font-family: "Merriweather", sans-serif;
   font-size: 1.2rem;
 }
+
+.tab {
+  tab-size: 36px;
+}

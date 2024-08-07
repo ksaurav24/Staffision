@@ -12,7 +12,9 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Service from "./components/Service";
 import Error from "./components/Error";
+import Blog from "./components/Blog";
 import Thankyou from "./components/Thankyou";
+import Blogs from "./components/Blogs";
 function App() {
   const container = useRef(null);
   useEffect(() => {
@@ -21,6 +23,16 @@ function App() {
       smooth: true,
       multiplier: 1,
       class: "is-reveal",
+      mobile: {
+        smooth: true,
+        multiplier: 1,
+        class: "is-reveal",
+      },
+      tablet: {
+        smooth: true,
+        multiplier: 1,
+        class: "is-reveal",
+      },
     });
     return () => {
       if (scroll) scroll.destroy();
@@ -41,6 +53,9 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/services/:service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:blog" element={<Blog />} />
+
           <Route path="/thankyou" element={<Thankyou />} />
           <Route path="*" element={<Error />} />
         </Routes>

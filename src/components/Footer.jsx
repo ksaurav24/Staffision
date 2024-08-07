@@ -70,18 +70,20 @@ const Footer = () => {
             Quick Links
           </h2>
           <ul className=" w-full">
-            {["Home", "About", "Services", "Contact"].map((link, index) => {
-              return (
-                <li key={index}>
-                  <a
-                    href={`/${link === "Home" ? "" : link.toLowerCase()} `}
-                    className="lg:text-xs text-md  poppins-regular text-gray-600"
-                  >
-                    {link}
-                  </a>
-                </li>
-              );
-            })}
+            {["Home", "About", "Services", "Blogs", "Contact"].map(
+              (link, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={`/${link === "Home" ? "" : link.toLowerCase()} `}
+                      className="lg:text-xs text-md  poppins-regular text-gray-600"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                );
+              }
+            )}
           </ul>
         </div>
         <div className="flex flex-col py-4 h-full w-full lg:w-1/4">

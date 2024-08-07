@@ -71,7 +71,7 @@ const Home = () => {
       <div data-scroll className="h-fit">
         <div data-scroll className="container w-screen relative flex ">
           <div className="flex lg:mt-20   mt-4 lg:ml-20 right-0 px-8 flex-col ">
-            <h1 className="lg:text-5xl  text-4xl text-center lg:text-start heroText merriweather-bold my-4 text-zinc-950 leading-tight ">
+            <h1 className="lg:text-4xl  text-4xl text-center lg:text-start heroText merriweather-bold my-4 text-zinc-950 leading-normal ">
               Strengthen Your Workforce, Strengthen Your Business
             </h1>
             <h3 className="poppins-regular text-center lg:text-start heroText text-md lg:text-sm">
